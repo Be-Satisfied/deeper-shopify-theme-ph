@@ -59,7 +59,7 @@
 <div class="Plug_and_Play">
   <h2>Plug-and-Play</h2>
   <p class="Plug_and_Play_text">To access a more comprehensive installation tutorial, please visit</p>
-  <a href="https://hello.deeper.network/" class="deeper_buy_now" target="_blank">install.deeper.network ></a>
+  <a href="https://hello.deeper.network/" class="deeper_buy_now" target="_blank">Learn More ></a>
   <div class="Plug_and_Play_list">
     <div class="Plug_and_Play_item">
       <div class="Plug_and_Play_item_img">
@@ -87,7 +87,6 @@
             >
           </div>
         </div>
-        <p class="Plug_and_Play_item_describe">*Deeper Connect Air does not support virtual wire mode.</p>
       </div>
     </div>
     <div class="Plug_and_Play_item">
@@ -117,7 +116,6 @@
             >
           </div>
         </div>
-        <p class="Plug_and_Play_item_describe">*Deeper Connect Air does not support virtual wire mode.</p>
       </div>
     </div>
     <div class="Plug_and_Play_item">
@@ -156,7 +154,6 @@
             >
           </div>
         </div>
-        <p class="Plug_and_Play_item_describe">*Deeper Connect Air does not support virtual wire mode.</p>
       </div>
     </div>
     <div class="Plug_and_Play_item">
@@ -204,7 +201,6 @@
             >
           </div>
         </div>
-        <p class="Plug_and_Play_item_describe">*Deeper Connect Mini and SE dose not support wireless relay mode.</p>
       </div>
     </div>
     <div class="Plug_and_Play_item">
@@ -252,7 +248,6 @@
             >
           </div>
         </div>
-        <p class="Plug_and_Play_item_describe">*Deeper Connect Mini and SE dose not support wifi adapter mode.</p>
       </div>
     </div>
   </div>
@@ -261,34 +256,29 @@
 <style>
   .deeper_buy_now {
     gap: 30px;
-    color: #495af5;
-    font-size: 20px;
+    color: #000;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: -0.12px;
-    display: block;
-    font-family: 'inter';
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+    text-transform: uppercase;
     text-align: center;
+    display: block;
   }
 
   .Plug_and_Play {
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 100px 0;
   }
 
   .Plug_and_Play h2 {
-    color: #111928;
     text-align: center;
-    font-family: 'inter';
-    font-size: 40px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: 48px;
-    /* 120% */
-    letter-spacing: -0.12px;
-    margin: 0 0 16px 0;
+    line-height: 42px; /* 116.667% */
+    text-transform: uppercase;
   }
 
   .Plug_and_Play_text {
@@ -300,7 +290,7 @@
     line-height: 26px;
     /* 130% */
     letter-spacing: -0.12px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   .Plug_and_Play_list {
@@ -309,23 +299,17 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    /* padding: 0 40px; */
     box-sizing: border-box;
   }
 
   .Plug_and_Play_item {
-    /* min-width: 325px; */
     flex: 1;
     max-width: 325px;
-    border-radius: 18px;
     overflow: hidden;
-    border: 0.5px solid #dfe4ea;
-    box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.1);
   }
 
   .Plug_and_Play_item_img {
     width: 100%;
-    min-height: 185px;
   }
 
   .Plug_and_Play_item_img img {
@@ -334,31 +318,25 @@
     object-fit: cover;
   }
 
-  .Plug_and_Play_item_content {
-    padding: 10px 20px 20px;
-  }
-
   .Plug_and_Play_item_title {
     color: #1d1d1f;
-    font-family: 'inter';
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 133.333% */
-    letter-spacing: -0.12px;
-    text-align: left;
+    line-height: 26px; /* 130% */
+    text-transform: uppercase;
+    margin: 20px 0;
+    white-space: nowrap;
   }
 
   .Plug_and_Play_item_text {
-    color: #637381;
-    font-size: 14px;
+    color: #2f3132;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    /* 142.857% */
-    letter-spacing: -0.12px;
-    font-family: 'inter';
-    min-height: 100px;
+    font-weight: 300;
+    line-height: 22px; /* 137.5% */
+    margin-bottom: 20px;
+    height: 180px;
   }
 
   .Plug_and_Play_icon_list {
@@ -366,16 +344,7 @@
     gap: 8px;
     margin: 5px 0;
   }
-  .Plug_and_Play_item_describe {
-    color: #666;
-    font-family: 'inter';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px; /* 150% */
-    letter-spacing: -0.12px;
-    margin: 0;
-  }
+
   @media screen and (max-width: 1200px) {
     .Plug_and_Play h2 {
       font-size: 32px;
@@ -402,9 +371,9 @@
       flex-wrap: nowrap;
       justify-content: space-between;
     }
-      .Plug_and_Play_item {
-        flex:none;
-         min-width: 325px;
-      }
+    .Plug_and_Play_item {
+      flex: none;
+      min-width: 325px;
+    }
   }
 </style>

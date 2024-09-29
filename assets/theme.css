@@ -21344,6 +21344,14 @@ body:not(.focus-enabled) .plyr.plyr--full-ui.plyr--video {
   margin-bottom: 0;
 }
 
+/* 移动端 */
+@media screen and (max-width: 1200px) {
+  .text__standard{
+    padding: 0 10px;
+  }
+}
+
+
 .standard__heading {
   font-family: var(--FONT-STACK-HEADING);
   font-weight: var(--FONT-WEIGHT-HEADING);

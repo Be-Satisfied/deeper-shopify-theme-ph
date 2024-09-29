@@ -96,120 +96,6 @@
         "padding_bottom": 84
       }
     },
-    "default-split-collection": {
-      "type": "section-collection-split",
-      "blocks": {
-        "default-first-split-block-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Split collection</p>",
-            "text_size": 10
-          }
-        },
-        "default-first-split-block-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Shop the look with some of our favorite products</p>",
-            "text_size": 6
-          }
-        },
-        "default-first-split-block-2": {
-          "type": "button",
-          "settings": {
-            "button_text": "Learn More",
-            "button_url": "",
-            "button_size": "btn--large",
-            "button_style": "hero__btn btn",
-            "button_color": "btn--white"
-          }
-        }
-      },
-      "block_order": [
-        "default-first-split-block-0",
-        "default-first-split-block-1",
-        "default-first-split-block-2"
-      ],
-      "settings": {
-        "collection": "frontpage",
-        "product_list": [
-
-        ],
-        "image": "shopify://shop_images/collection1.jpg",
-        "sticky_image_enable": false,
-        "swap": false,
-        "overlay_opacity": 0,
-        "overlay_color": "#181929",
-        "grid_large": 2,
-        "grid_small": 1.5,
-        "limit": 4,
-        "bg": "palette--light bg--neutral",
-        "video_link_bg": "",
-        "object_position": "center-center",
-        "flex_align": "align--middle-center",
-        "align_text": "text-center",
-        "color": "text--white",
-        "width": "wrapper",
-        "padding_top": 12,
-        "padding_bottom": 12
-      }
-    },
-    "default-second-split-collection": {
-      "type": "section-collection-split",
-      "blocks": {
-        "default-second-split-block-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Split collection</p>",
-            "text_size": 10
-          }
-        },
-        "default-second-split-block-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Shop the look with some of our favorite products</p>",
-            "text_size": 6
-          }
-        },
-        "default-second-split-block-2": {
-          "type": "button",
-          "settings": {
-            "button_text": "Learn More",
-            "button_url": "",
-            "button_size": "btn--large",
-            "button_style": "hero__btn btn",
-            "button_color": "btn--white"
-          }
-        }
-      },
-      "block_order": [
-        "default-second-split-block-0",
-        "default-second-split-block-1",
-        "default-second-split-block-2"
-      ],
-      "settings": {
-        "collection": "accessories",
-        "product_list": [
-
-        ],
-        "image": "shopify://shop_images/collection2.jpg",
-        "sticky_image_enable": false,
-        "swap": true,
-        "overlay_opacity": 0,
-        "overlay_color": "#181929",
-        "grid_large": 2,
-        "grid_small": 1.1,
-        "limit": 2,
-        "bg": "palette--light bg--neutral",
-        "video_link_bg": "",
-        "object_position": "center-center",
-        "flex_align": "align--middle-center",
-        "align_text": "text-center",
-        "color": "text--white",
-        "width": "wrapper",
-        "padding_top": 12,
-        "padding_bottom": 12
-      }
-    },
     "2024_plug_and_play_h4cccR": {
       "type": "2024-plug-and-play",
       "settings": {
@@ -282,8 +168,6 @@
     "section_new_featured_products_rgJF8b",
     "section_versatile_usage_scenarios_RXP9AG",
     "section_you_might_like_iPpPMU",
-    "default-split-collection",
-    "default-second-split-collection",
     "2024_plug_and_play_h4cccR",
     "section_accordion_8rmeAU"
   ]
