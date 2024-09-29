@@ -39,7 +39,7 @@
         "full_width": false,
         "logo": "shopify://shop_images/Logo.png",
         "logo_max_limit": 120,
-        "main_menu_linklist": "main-menu",
+        "main_menu_linklist": "2024-home-nav",
         "enable_search": true,
         "enable_account": true,
         "transparent_home": true,
