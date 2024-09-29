@@ -28,16 +28,58 @@
             "show_currency_desktop": true,
             "show_currency_mobile": true
           }
+        },
+        "image_QmaYFz": {
+          "type": "image",
+          "settings": {
+            "position": "1",
+            "image": "shopify://shop_images/Air.png",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
+            "title": "Deeper Connect Air",
+            "link_text": "Portable DPN Travel Router",
+            "link": "shopify://products/deeper-connect-air",
+            "color_text": "text--white"
+          }
+        },
+        "image_RCTVcB": {
+          "type": "image",
+          "settings": {
+            "position": "1",
+            "image": "shopify://shop_images/Mini.png",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
+            "title": "Deeper Connect Mini",
+            "link_text": "Best Performance Web3 Router",
+            "link": "shopify://products/deeper-connect-mini",
+            "color_text": "text--white"
+          }
+        },
+        "image_6Krx84": {
+          "type": "image",
+          "settings": {
+            "position": "1",
+            "image": "shopify://shop_images/Pico-Lite.png",
+            "aspect_ratio": 0.5,
+            "wide_image": true,
+            "title": "Deeper Connect Pico lite",
+            "link_text": "Versatile DPN Router",
+            "link": "shopify://products/deeper-connect-pico-lite",
+            "color_text": "text--white"
+          }
         }
       },
       "block_order": [
-        "toolbar"
+        "toolbar",
+        "image_QmaYFz",
+        "image_RCTVcB",
+        "image_6Krx84"
       ],
       "settings": {
         "enable_header_sticky": true,
         "header_style": "logo_beside",
         "full_width": false,
-        "logo": "shopify://shop_images/Logo.png",
+        "logo": "shopify://shop_images/Logo_380beb50-e669-42c8-9cc8-9430e3e99914.png",
         "logo_max_limit": 120,
         "main_menu_linklist": "2024-home-nav",
         "enable_search": true,
