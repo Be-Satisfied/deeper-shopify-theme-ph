@@ -16071,6 +16071,9 @@ html.no-js .quantity__button {
   /* margin-bottom: 0.8em; */
   margin-bottom: 60px;
   text-transform: uppercase;
+  font-size: 36px !important;
+  font-weight: 700;
+  color: #000;
 }
 
 /* ================ Accordions with images ================ */
@@ -16261,6 +16264,9 @@ html.no-js .quantity__button {
 @media only screen and (max-width: 767px) {
   .section__blog__grid {
     padding-bottom: 25px;
+  }
+  .accordion__heading{
+    font-size: 32px;
   }
 }
 .section__blog__grid .article__card {
