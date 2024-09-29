@@ -65,9 +65,22 @@
     },
     "section_you_might_like_iPpPMU": {
       "type": "section-you-might-like",
+      "blocks": {
+        "product_wqFetN": {
+          "type": "product",
+          "settings": {
+            "product": "deeper-connect-dual-antennas-wi-fi-adapter",
+            "product_image": "shopify://shop_images/3abc30bd5abf764e1b97ed01e11a4cde.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "product_wqFetN"
+      ],
       "settings": {
         "title": "YOU MIGHT LIKE",
         "description": "",
+        "image": "shopify://shop_images/collection2.jpg",
         "width": "wrapper",
         "padding_top": 100,
         "padding_bottom": 36

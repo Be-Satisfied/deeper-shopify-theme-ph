@@ -41,28 +41,22 @@
             {% if product != blank %}
               <a href="{{ product.url }}" class="you-might-like__item">
                 <div class="you-might-like__item-image">
-                  {% if block.settings.product_image != blank %}
+                  {% if block.settings.custom_image != blank %}
                     <img
-                      src="{{ block.settings.product_image | img_url: '300x' }}"
-                      alt="{{ block.settings.product_image.alt | escape }}"
-                      width="{{ block.settings.product_image.width }}"
-                      height="{{ block.settings.product_image.height }}"
+                      src="{{ block.settings.custom_image | img_url: '300x' }}"
+                      alt="{{ block.settings.custom_image.alt | escape }}"
+                      width="{{ block.settings.custom_image.width }}"
+                      height="{{ block.settings.custom_image.height }}"
                       loading="lazy"
                     >
                   {% else %}
-                    <img
-                      src="{{ product.featured_image | img_url: '300x' }}"
-                      alt="{{ product.featured_image.alt | escape }}"
-                      width="{{ product.featured_image.width }}"
-                      height="{{ product.featured_image.height }}"
-                      loading="lazy"
-                    >
+                    {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
                   {% endif %}
                 </div>
                 <div class="you-might-like__item-info">
                   <div class="you-might-like__item-title">{{ product.title }}</div>
                   <div class="you-might-like__item-description">
-                    {{ product.description | strip_html | truncatewords: 20 }}
+                    {{ block.settings.custom_description }}
                   </div>
                   <div class="you-might-like__item-subtitle">{{ product.metafields.custom.subtitle }}</div>
                   <div class="you-might-like__item-price">{{ product.price | money }}</div>
@@ -73,7 +67,7 @@
                 {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
                 <div class="you-might-like__item-info">
                   <div class="you-might-like__item-title">Product title</div>
-                  <div class="you-might-like__item-description">Product description goes here...</div>
+                  <div class="you-might-like__item-description">Custom product description</div>
                   <div class="you-might-like__item-subtitle">Product subtitle</div>
                   <div class="you-might-like__item-price">$0.00</div>
                 </div>
@@ -239,8 +233,14 @@
         },
         {
           "type": "image_picker",
-          "id": "product_image",
+          "id": "custom_image",
           "label": "Custom product image"
+        },
+        {
+          "type": "textarea",
+          "id": "custom_description",
+          "label": "Custom product description",
+          "default": "Enter a custom description for this product."
         }
       ]
     }
