@@ -1,6 +1,4 @@
-<!-- /sections/section-collection.liquid -->
-
-{%- assign collection = collections[section.settings.collection] -%}
+<!-- /sections/section-new-featured-products.liquid -->
 
 {% case section.settings.grid %}
   {% when 2 %}
@@ -12,20 +10,22 @@
 {% endcase %}
 
 <div
-  class="section-collection section-collection--{{ collection.products_count }} {{ section.settings.color_bg }}"
+  class="section-new-featured-products {{ section.settings.color_bg }}"
   data-section-id="{{ section.id }}"
-  data-section-type="section-collection"
+  data-section-type="section-new-featured-products"
   style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;"
 >
   <div class="{{ section.settings.width }} section-padding">
-    <div class="section-collection__foreground">
-      <div class="section-collection__inner">
-        <div class="section-collection__head">
+    <div class="section-new-featured-products__foreground">
+      <div class="section-new-featured-products__inner">
+        <div class="section-new-featured-products__head">
           {% if section.settings.title != blank %}
-            <h2 class="index__collection__title h3">{{ section.settings.title | escape }}</h2>
+            <h2 class="index__new-featured-products__title h3">{{ section.settings.title | escape }}</h2>
           {% endif %}
           {% if section.settings.description != blank %}
-            <div class="index__collection__subtitle subtitle--decorated">{{ section.settings.description }}</div>
+            <div class="index__new-featured-products__subtitle subtitle--decorated">
+              {{ section.settings.description }}
+            </div>
           {% endif %}
         </div>
 
@@ -49,36 +49,31 @@
         {% endif %}
         data-custom-scrollbar-items
       >
-        {% assign limit = section.settings.limit | plus: 0 %}
-        {% for product in collection.products limit: limit %}
-          {% render 'product-grid-item', product: product, grid_strings: grid_strings %}
-        {% else %}
-          {% render 'onboarding-featured-products',
-            section: section,
-            grid_strings: grid_strings,
-            product_count: limit
-          %}
+        {% for block in section.blocks %}
+          {% assign product = all_products[block.settings.product] %}
+          {% if product != blank %}
+            <div class="grid__item {{ grid_strings }}" {{ block.shopify_attributes }}>
+              {% render 'product-grid-item', product: product %}
+              {% if block.settings.product_description != blank %}
+                <div class="product-description">{{ block.settings.product_description }}</div>
+              {% endif %}
+            </div>
+          {% else %}
+            {% render 'onboarding-featured-products', section: section, grid_strings: grid_strings, product_count: 1 %}
+          {% endif %}
         {% endfor %}
       </div>
 
       <div class="custom-scrollbar small-down--show" data-custom-scrollbar>
         <div class="custom-scrollbar__track" data-custom-scrollbar-track></div>
       </div>
-
-      {% if section.settings.show_view_all %}
-        <div class="text-center">
-          <a href="{{ collection.url }}" class="btn btn--clear">
-            {{ 'collections.general.view_all' | t }}
-          </a>
-        </div>
-      {% endif %}
     </div>
   </div>
 </div>
 
 {% schema %}
 {
-  "name": "New Featured collection",
+  "name": "New Featured Products",
   "settings": [
     {
       "type": "text",
@@ -90,12 +85,7 @@
       "type": "richtext",
       "id": "description",
       "label": "Text",
-      "default": "<p>Use this area to describe the collection.</p>"
-    },
-    {
-      "id": "collection",
-      "type": "collection",
-      "label": "Collection"
+      "default": "<p>Use this area to describe the featured products.</p>"
     },
     {
       "type": "range",
@@ -105,15 +95,6 @@
       "step": 1,
       "label": "Products per row",
       "default": 4
-    },
-    {
-      "type": "range",
-      "id": "limit",
-      "min": 1,
-      "max": 20,
-      "step": 1,
-      "label": "Product limit",
-      "default": 8
     },
     {
       "type": "checkbox",
@@ -132,12 +113,6 @@
         { "value": "palette--dark bg--invert", "label": "Dark" },
         { "value": "palette--dark bg--invert--accent", "label": "Dark accent" }
       ]
-    },
-    {
-      "type": "checkbox",
-      "id": "show_view_all",
-      "label": "Show 'View all' button",
-      "default": false
     },
     {
       "type": "header",
@@ -175,10 +150,43 @@
       "default": 36
     }
   ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "textarea",
+          "id": "product_description",
+          "label": "Product Description",
+          "default": "Add a description for this product"
+        }
+      ]
+    }
+  ],
   "presets": [
     {
-      "name": "New Featured collection",
-      "category": "Collection"
+      "name": "New Featured Products",
+      "category": "Products",
+      "blocks": [
+        {
+          "type": "product"
+        },
+        {
+          "type": "product"
+        },
+        {
+          "type": "product"
+        },
+        {
+          "type": "product"
+        }
+      ]
     }
   ],
   "disabled_on": {
