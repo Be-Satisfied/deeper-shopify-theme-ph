@@ -13878,6 +13878,7 @@ predictive-search[open] .header__search__results {
 /* Subfooter */
 .subfooter .section-padding {
   position: relative;
+  border-top: 1px solid var(--border);
 }
 .subfooter .section-padding:before {
   content: "";
@@ -15826,8 +15827,10 @@ html.no-js .quantity__button {
 
 /* ================ Generic accordion ================ */
 .accordion__wrapper {
-  border-bottom: 1px solid var(--border);
-  border-top: 1px solid var(--border);
+  /* border-bottom: 1px solid var(--border); */
+  background-color: #F4F4F4;
+  padding: 18px 24px;
+  /* border-top: 1px solid var(--border); */
 }
 
 .accordion__wrapper + .accordion__wrapper {
@@ -16047,15 +16050,20 @@ html.no-js .quantity__button {
 
 /* ================ Page accordions ================ */
 .page-accordion {
-  padding-bottom: var(--line);
+  /* padding-bottom: var(--line); */
+  display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .page-accordion .accordion__title {
-  padding: 0.8em 30px 0.8em 0;
+  /* padding: 0.8em 30px 0.8em 0; */
+  /* padding: 18px 24px; */
+  padding: 0;
 }
 
 .accordion__heading {
   /* margin-bottom: 0.8em; */
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 
 /* ================ Accordions with images ================ */
@@ -21343,6 +21351,11 @@ body:not(.focus-enabled) .plyr.plyr--full-ui.plyr--video {
 /*=== Text sections ==*/
 .text__standard *:not(.standard__icon, .standard__cta):last-child {
   margin-bottom: 0;
+}
+
+.text__standard{
+  width: 794px;
+  margin: 0 auto;
 }
 
 /* 移动端 */
