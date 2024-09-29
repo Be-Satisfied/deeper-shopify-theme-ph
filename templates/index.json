@@ -39,7 +39,7 @@
         "autoplay": false,
         "autoplay_speed": 8,
         "dots_position": "dots--center",
-        "height": "use_pixels_650",
+        "height": "use_pixels_800",
         "width": "wrapper--none",
         "padding_top": 0,
         "padding_bottom": 0
