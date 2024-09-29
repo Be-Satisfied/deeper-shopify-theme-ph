@@ -58,7 +58,8 @@
                   <div class="you-might-like__item-description">
                     {{ block.settings.custom_description }}
                   </div>
-                  <div class="you-might-like__item-subtitle">{{ product.metafields.custom.subtitle }}</div>
+                  {% comment %} 如果有折扣价才显示 {% endcomment %}
+                  {% comment %} <div class="you-might-like__item-subtitle">{{ product.metafields.custom.subtitle }}</div> {% endcomment %}
                   <div class="you-might-like__item-price">{{ product.price | money }}</div>
                 </div>
               </a>

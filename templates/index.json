@@ -19,7 +19,7 @@
             "mobile_image": "shopify://shop_images/banner_phone.jpg",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
-            "title": "INTRODUCING The best DPN",
+            "title": "INTRODUCING THE BEST DPN",
             "richtext": "<p>Revolutionary and Award-Winning,<br/>The World's First Decentralized VPN Hardware.</p>",
             "color_bg": "hero__content--transparent",
             "text_align": "align--middle-center",
@@ -48,7 +48,7 @@
     "section_new_featured_products_rgJF8b": {
       "type": "section-new-featured-products",
       "settings": {
-        "title": "Featured Products",
+        "title": "FEATURED PRODUCTS",
         "description": "",
         "width": "wrapper",
         "padding_top": 100,
