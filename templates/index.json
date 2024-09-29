@@ -58,10 +58,18 @@
     "section_versatile_usage_scenarios_RXP9AG": {
       "type": "section-versatile-usage-scenarios",
       "settings": {
-        "title": "Featured Products",
-        "description": "",
         "width": "wrapper",
         "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_you_might_like_iPpPMU": {
+      "type": "section-you-might-like",
+      "settings": {
+        "title": "YOU MIGHT LIKE",
+        "description": "",
+        "width": "wrapper",
+        "padding_top": 100,
         "padding_bottom": 36
       }
     },
@@ -250,6 +258,7 @@
     "section_slideshow_G6kW3p",
     "section_new_featured_products_rgJF8b",
     "section_versatile_usage_scenarios_RXP9AG",
+    "section_you_might_like_iPpPMU",
     "default-split-collection",
     "default-second-split-collection",
     "2024_plug_and_play_h4cccR",

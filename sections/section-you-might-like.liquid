@@ -1,133 +1,175 @@
 <div
-  class="section-new-featured-products {{ section.settings.color_bg }}"
+  class="section-you-might-like {{ section.settings.color_bg }}"
   data-section-id="{{ section.id }}"
-  data-section-type="section-new-featured-products"
+  data-section-type="section-you-might-like"
   style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;"
 >
   <div class="{{ section.settings.width }} section-padding">
-    <div class="section-new-featured-products__foreground">
-      <div class="section-new-featured-products__inner">
-        <div class="section-new-featured-products__head">
+    <div class="section-you-might-like__foreground">
+      <div class="section-you-might-like__inner">
+        <div class="section-you-might-like__head">
           {% if section.settings.title != blank %}
-            <h2 class="index__new-featured-products__title h3 text-center new-featured-products__title">
+            <h2 class="you-might-like__title h3 text-center">
               {{ section.settings.title | escape }}
             </h2>
           {% endif %}
           {% if section.settings.description != blank %}
-            <div class="index__new-featured-products__subtitle subtitle--decorated">
+            <div class="you-might-like__subtitle subtitle--decorated">
               {{ section.settings.description }}
             </div>
           {% endif %}
         </div>
       </div>
 
-      {% comment %} 单个产品静态列表 {% endcomment %}
-      <div class="new-featured-products__list">
-        <a href="/products/deeper-connect-pico-lite" class="new-featured-products__item">
-          <div class="new-featured-products__item-image">
+      <div class="you-might-like__content">
+        <div class="you-might-like__image">
+          {% if section.settings.image != blank %}
             <img
-              src="https://cdn.shopify.com/s/files/1/0686/5754/5273/files/Pico-Lite.png?v=1727586336"
-              alt="Deeper Connect Pico lite"
+              src="{{ section.settings.image | img_url: '600x' }}"
+              alt="{{ section.settings.image.alt | escape }}"
+              width="{{ section.settings.image.width }}"
+              height="{{ section.settings.image.height }}"
+              loading="lazy"
             >
-          </div>
-          <div class="new-featured-products__item-title">Deeper Connect Pico lite</div>
-          <div class="new-featured-products__item-subtitle">Versatile DPN Router</div>
-          <div class="new-featured-products__item-price">₱ 5,500</div>
-        </a>
-        <a href="/products/deeper-connect-mini" class="new-featured-products__item">
-          <div class="new-featured-products__item-image">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0686/5754/5273/files/Mini.png?v=1727586336"
-              alt="Deeper Connect Mini"
-            >
-          </div>
-          <div class="new-featured-products__item-title">Deeper Connect Mini</div>
-          <div class="new-featured-products__item-subtitle">Best Performance Web3 Router</div>
-          <div class="new-featured-products__item-price">₱ 12,600</div>
-        </a>
-        <a href="/products/deeper-connect-air" class="new-featured-products__item">
-          <div class="new-featured-products__item-image">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0686/5754/5273/files/Pico-Lite.png?v=1727586336"
-              alt="Deeper Connect Air"
-            >
-          </div>
-          <div class="new-featured-products__item-title">Deeper Connect Air</div>
-          <div class="new-featured-products__item-subtitle">Portable DPN Travel Router</div>
-          <div class="new-featured-products__item-price">₱ 9,300</div>
-        </a>
-      </div>
-
-      {% comment %} 去往产品页面 {% endcomment %}
-      <div class="new-featured-products__link">
-        <a href="/collections/deeper-connect-routers">View All </a>
+          {% else %}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          {% endif %}
+        </div>
+        <div class="you-might-like__products">
+          {% for block in section.blocks limit: 2 %}
+            {% assign product = block.settings.product %}
+            {% if product != blank %}
+              <a href="{{ product.url }}" class="you-might-like__item">
+                <div class="you-might-like__item-image">
+                  {% if block.settings.product_image != blank %}
+                    <img
+                      src="{{ block.settings.product_image | img_url: '300x' }}"
+                      alt="{{ block.settings.product_image.alt | escape }}"
+                      width="{{ block.settings.product_image.width }}"
+                      height="{{ block.settings.product_image.height }}"
+                      loading="lazy"
+                    >
+                  {% else %}
+                    <img
+                      src="{{ product.featured_image | img_url: '300x' }}"
+                      alt="{{ product.featured_image.alt | escape }}"
+                      width="{{ product.featured_image.width }}"
+                      height="{{ product.featured_image.height }}"
+                      loading="lazy"
+                    >
+                  {% endif %}
+                </div>
+                <div class="you-might-like__item-info">
+                  <div class="you-might-like__item-title">{{ product.title }}</div>
+                  <div class="you-might-like__item-description">
+                    {{ product.description | strip_html | truncatewords: 20 }}
+                  </div>
+                  <div class="you-might-like__item-subtitle">{{ product.metafields.custom.subtitle }}</div>
+                  <div class="you-might-like__item-price">{{ product.price | money }}</div>
+                </div>
+              </a>
+            {% else %}
+              <div class="you-might-like__item placeholder">
+                {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                <div class="you-might-like__item-info">
+                  <div class="you-might-like__item-title">Product title</div>
+                  <div class="you-might-like__item-description">Product description goes here...</div>
+                  <div class="you-might-like__item-subtitle">Product subtitle</div>
+                  <div class="you-might-like__item-price">$0.00</div>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <style>
-  .new-featured-products__title {
-    margin-bottom: 60px;
+  .you-might-like__title {
+    margin-bottom: 40px;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: 42px; /* 116.667% */
+    line-height: 42px;
   }
-  .new-featured-products__list {
+  .you-might-like__content {
     display: flex;
     gap: 20px;
-    flex-wrap: nowrap;
+    height: 600px;
   }
-  .new-featured-products__item {
+  .you-might-like__image {
+    flex: 1;
+    max-height: 100%;
+    overflow: hidden;
+  }
+  .you-might-like__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .you-might-like__products {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+  }
+  .you-might-like__item {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    min-width: 250px;
+    max-width: 300px;
   }
-  .new-featured-products__item-image {
-    /* width: 387px;
-    height: 387px; */
-    max-width: fit-content;
+  .you-might-like__item-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
   }
-  .new-featured-products__item-title {
-    font-size: 24px;
+  .you-might-like__item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .you-might-like__item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .you-might-like__item-title {
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 30px; /* 125% */
+    line-height: 24px;
   }
-  .new-featured-products__item-subtitle {
-    margin-bottom: 10px;
+  .you-might-like__item-description {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: #666;
+  }
+  .you-might-like__item-subtitle {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 125% */
-    margin-bottom: 0;
+    line-height: 20px;
   }
-  .new-featured-products__item-price {
+  .you-might-like__item-price {
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 22px; /* 137.5% */
+    line-height: 22px;
   }
-  .new-featured-products__link {
-    margin-top: 20px;
-    text-align: center;
-    color: #000;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px; /* 133.333% */
-    display: block;
-    margin-top: 60px;
-  }
-  /* 移动端 */
   @media (max-width: 768px) {
-    .new-featured-products__list {
+    .you-might-like__content {
       flex-direction: column;
-      padding: 010px;
+      height: auto;
     }
-    .new-featured-products__link {
-      margin-top: 10px;
+    .you-might-like__products {
+      padding: 0 10px;
     }
   }
 </style>
@@ -140,13 +182,18 @@
       "type": "text",
       "id": "title",
       "label": "Heading",
-      "default": "Featured Products"
+      "default": "YOU Might Like"
     },
     {
       "type": "richtext",
       "id": "description",
       "label": "Text",
-      "default": "<p>Use this area to describe the featured products.</p>"
+      "default": "<p>Discover more products you might like.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Left column image"
     },
     {
       "type": "select",
@@ -180,10 +227,37 @@
       "default": 36
     }
   ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "Custom product image"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 2,
   "presets": [
     {
       "name": "YOU Might Like",
-      "category": "Products"
+      "category": "Products",
+      "blocks": [
+        {
+          "type": "product"
+        },
+        {
+          "type": "product"
+        }
+      ]
     }
   ],
   "disabled_on": {
