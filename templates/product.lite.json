@@ -62,18 +62,6 @@
             "padding_bottom": 20
           }
         },
-        "icon-2": {
-          "type": "icon",
-          "disabled": true,
-          "settings": {
-            "icon_name": "icon-sewing-machine",
-            "icon_size": 16,
-            "icon_color": "#5d9386",
-            "show_icon_bg": true,
-            "text": "<p>Certified fair trade product</p>",
-            "padding_bottom": 32
-          }
-        },
         "description": {
           "type": "description",
           "settings": {
@@ -127,7 +115,6 @@
         "form",
         "siblings",
         "icon-1",
-        "icon-2",
         "description",
         "upsell",
         "pickup",
