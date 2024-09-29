@@ -9,7 +9,9 @@
       <div class="section-new-featured-products__inner">
         <div class="section-new-featured-products__head">
           {% if section.settings.title != blank %}
-            <h2 class="index__new-featured-products__title h3">{{ section.settings.title | escape }}</h2>
+            <h2 class="index__new-featured-products__title h3 text-center new-featured-products__title">
+              {{ section.settings.title | escape }}
+            </h2>
           {% endif %}
           {% if section.settings.description != blank %}
             <div class="index__new-featured-products__subtitle subtitle--decorated">
@@ -17,22 +19,98 @@
             </div>
           {% endif %}
         </div>
+      </div>
 
-        {% if section.settings.enable_slider %}
-          <div class="slider-actions" data-slider-actions>
-            <button type="button" class="slider-arrow slider-arrow--prev" data-prev-arrow disabled>
-              <span class="visually-hidden">{{ 'general.accessibility.next' | t }}</span>
-            </button>
-
-            <button type="button" class="slider-arrow slider-arrow--next" data-next-arrow>
-              <span class="visually-hidden">{{ 'general.accessibility.prev' | t }}</span>
-            </button>
+      {% comment %} 单个产品静态列表 {% endcomment %}
+      <div class="new-featured-products__list">
+        <a href="/products/deeper-connect-pico-lite" class="new-featured-products__item">
+          <div class="new-featured-products__item-image">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0686/5754/5273/files/Pico-Lite.png?v=1727586336"
+              alt="Deeper Connect Pico lite"
+            >
           </div>
-        {% endif %}
+          <div class="new-featured-products__item-title">Deeper Connect Pico lite</div>
+          <div class="new-featured-products__item-subtitle">Versatile DPN Router</div>
+          <div class="new-featured-products__item-price">₱ 5,500</div>
+        </a>
+        <a href="/products/deeper-connect-mini" class="new-featured-products__item">
+          <div class="new-featured-products__item-image">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0686/5754/5273/files/Mini.png?v=1727586336"
+              alt="Deeper Connect Mini"
+            >
+          </div>
+          <div class="new-featured-products__item-title">Deeper Connect Mini</div>
+          <div class="new-featured-products__item-subtitle">Best Performance Web3 Router</div>
+          <div class="new-featured-products__item-price">₱ 12,600</div>
+        </a>
+        <a href="/products/deeper-connect-air" class="new-featured-products__item">
+          <div class="new-featured-products__item-image">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0686/5754/5273/files/Pico-Lite.png?v=1727586336"
+              alt="Deeper Connect Air"
+            >
+          </div>
+          <div class="new-featured-products__item-title">Deeper Connect Air</div>
+          <div class="new-featured-products__item-subtitle">Portable DPN Travel Router</div>
+          <div class="new-featured-products__item-price">₱ 9,300</div>
+        </a>
       </div>
     </div>
   </div>
 </div>
+
+<style>
+  .new-featured-products__title {
+    margin-bottom: 60px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; /* 116.667% */
+  }
+  .new-featured-products__list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+  .new-featured-products__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .new-featured-products__item-image {
+    /* width: 387px;
+    height: 387px; */
+    max-width: fit-content;
+  }
+  .new-featured-products__item-title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 125% */
+  }
+  .new-featured-products__item-subtitle {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    margin-bottom: 0;
+  }
+  .new-featured-products__item-price {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 137.5% */
+  }
+  /* 移动端 */
+  @media (max-width: 768px) {
+    .new-featured-products__list {
+      flex-direction: column;
+    }
+  }
+</style>
 
 {% schema %}
 {
