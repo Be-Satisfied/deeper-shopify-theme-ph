@@ -13840,11 +13840,16 @@ predictive-search[open] .header__search__results {
   .footer__description p {
     margin-top: 32px;
   }
+ 
 }
 @media only screen and (max-width: 767px) {
   .footer__description p {
     margin-top: 10px;
   }
+  .footer,
+  .subfooter {
+  padding: 0 20px;
+}
 }
 
 .footer__nav {
@@ -21362,6 +21367,9 @@ body:not(.focus-enabled) .plyr.plyr--full-ui.plyr--video {
 @media screen and (max-width: 1200px) {
   .text__standard{
     padding: 0 10px;
+  }
+  .text__standard{
+    width: 100%;
   }
 }
 
