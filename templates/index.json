@@ -70,18 +70,26 @@
           "type": "product",
           "settings": {
             "product": "deeper-connect-dual-antennas-wi-fi-adapter",
-            "custom_image": "shopify://shop_images/Lite.jpg",
+            "custom_image": "shopify://shop_images/Wi-Fi-Adapter.png",
+            "custom_description": "Applicable to Deeper Connect Pico Lite / Deeper Connect Mini."
+          }
+        },
+        "product_wf8Aet": {
+          "type": "product",
+          "settings": {
+            "product": "deeper-connect-wi-fi-adapter-usb-a",
             "custom_description": "Enter a custom description for this product."
           }
         }
       },
       "block_order": [
-        "product_wqFetN"
+        "product_wqFetN",
+        "product_wf8Aet"
       ],
       "settings": {
         "title": "YOU MIGHT LIKE",
         "description": "",
-        "image": "shopify://shop_images/collection2.jpg",
+        "image": "shopify://shop_images/You-might-like.png",
         "width": "wrapper",
         "padding_top": 100,
         "padding_bottom": 36
