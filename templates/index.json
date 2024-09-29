@@ -93,7 +93,7 @@
         "image": "shopify://shop_images/You-might-like.png",
         "width": "wrapper",
         "padding_top": 100,
-        "padding_bottom": 36
+        "padding_bottom": 84
       }
     },
     "default-split-collection": {
