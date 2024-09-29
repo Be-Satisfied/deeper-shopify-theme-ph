@@ -58,21 +58,14 @@
         "product_PAn3B7": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "deeper-connect-mini",
             "product_description": "Add a description for this product"
           }
         },
         "product_H7JrVP": {
           "type": "product",
           "settings": {
-            "product": "",
-            "product_description": "Add a description for this product"
-          }
-        },
-        "product_ffANy7": {
-          "type": "product",
-          "settings": {
-            "product": "",
+            "product": "deeper-connect-pico-lite",
             "product_description": "Add a description for this product"
           }
         }
@@ -80,8 +73,7 @@
       "block_order": [
         "product_AcR4ti",
         "product_PAn3B7",
-        "product_H7JrVP",
-        "product_ffANy7"
+        "product_H7JrVP"
       ],
       "settings": {
         "title": "Featured Products",
