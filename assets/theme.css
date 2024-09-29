@@ -16054,7 +16054,8 @@ html.no-js .quantity__button {
 }
 
 .accordion__heading {
-  margin-bottom: 0.8em;
+  /* margin-bottom: 0.8em; */
+  margin-bottom: 20px;
 }
 
 /* ================ Accordions with images ================ */

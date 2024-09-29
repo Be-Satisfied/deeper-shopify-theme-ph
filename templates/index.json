@@ -157,7 +157,7 @@
         "text_color": "text--neutral",
         "bg": "palette--light bg--neutral",
         "height": "use_screen_full",
-        "width": "wrapper--full",
+        "width": "wrapper",
         "padding_top": 100,
         "padding_bottom": 100
       }

@@ -9,6 +9,48 @@
   <div class="{{ section.settings.width }} section-padding">
     <div class="grid">
       <div class="grid__item medium-up--one-half">
+        <div class="grid">
+          <div class="grid__item one-half">
+            {%- assign footer_linklist = linklists[section.settings.footer_linklist] -%}
+            {% if footer_linklist.links.size > 0 %}
+              <ul class="footer__nav">
+                {% for link in footer_linklist.links %}
+                  <li>
+                    <a href="{{ link.url }}">{{ link.title }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {%- endif -%}
+          </div>
+          <div class="grid__item one-half">
+            {%- assign footer_second_linklist = linklists[section.settings.footer_second_linklist] -%}
+            {% if footer_second_linklist.links.size > 0 %}
+              <ul class="footer__nav">
+                {% for link in footer_second_linklist.links %}
+                  <li>
+                    <a href="{{ link.url }}">{{ link.title }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {%- endif -%}
+          </div>
+          <!--
+            <div class="grid__item one-half">
+              {%- assign policy_menu = linklists[section.settings.policy_menu] -%}
+              {% if policy_menu.links.size > 0 %}
+                <ul class="footer__nav">
+                  {% for link in policy_menu.links %}
+                    <li>
+                      <a href="{{ link.url }}">{{ link.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {%- endif -%}
+            </div>
+          -->
+        </div>
+      </div>
+      <div class="grid__item medium-up--one-half">
         <a
           href="{{ routes.root_url }}"
           class="site-logo footer__logo"
@@ -37,49 +79,19 @@
         {%- endif -%}
         <hr class="hidden-medium-up">
       </div>
-      <div class="grid__item medium-up--one-half">
-        <div class="grid">
-          <div class="grid__item one-half">
-            {%- assign footer_linklist = linklists[section.settings.footer_linklist] -%}
-            {% if footer_linklist.links.size > 0 %}
-              <ul class="footer__nav">
-                {% for link in footer_linklist.links %}
-                  <li>
-                    <a href="{{ link.url }}">{{ link.title }}</a>
-                  </li>
-                {% endfor %}
-              </ul>
-            {%- endif -%}
-          </div>
-          <div class="grid__item one-half">
-            {%- assign footer_second_linklist = linklists[section.settings.footer_second_linklist] -%}
-            {% if footer_second_linklist.links.size > 0 %}
-              <ul class="footer__nav">
-                {% for link in footer_second_linklist.links %}
-                  <li>
-                    <a href="{{ link.url }}">{{ link.title }}</a>
-                  </li>
-                {% endfor %}
-              </ul>
-            {%- endif -%}
-          </div>
-            <!-- <div class="grid__item one-half">
-              {%- assign policy_menu = linklists[section.settings.policy_menu] -%}
-              {% if policy_menu.links.size > 0 %}
-                <ul class="footer__nav">
-                  {% for link in policy_menu.links %}
-                    <li>
-                      <a href="{{ link.url }}">{{ link.title }}</a>
-                    </li>
-                  {% endfor %}
-                </ul>
-              {%- endif -%}
-            </div> -->
-        </div>
-      </div>
     </div>
   </div>
 </footer>
+
+<style>
+  .grid__item:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+  }
+</style>
 
 {% schema %}
 {
@@ -164,5 +176,4 @@
     "groups": ["footer"]
   }
 }
-
 {% endschema %}
