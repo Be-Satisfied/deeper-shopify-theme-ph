@@ -2,26 +2,29 @@
   class="section-new-featured-products {{ section.settings.color_bg }} Versatile-Usage-Scenarios-box-bg"
   data-section-id="{{ section.id }}"
   data-section-type="section-new-featured-products"
-  style="
-    --PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;
-    background-image: url('https://cdn.shopify.com/s/files/1/0686/5754/5273/files/PicoLite-vus.png?v=1727594270');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  "
+  style="    --PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;"
 >
   <div class="Versatile-Usage-Scenarios-box {{ section.settings.width }}">
     <div class="Versatile-Usage-Scenarios-content">
-      <h2 class="Versatile-Usage-Scenarios-title">Versatile Usage Scenarios</h2>
-      <p class="Versatile-Usage-Scenarios-text">
-        Ideal for use in offices, cafes, during travel, at airports, or any location with Wi-Fi access！
-      </p>
-      <div class="Versatile-Usage-Scenarios-list">
-        <ul>
-          <li class="active-li">Deeper Connect Pico Lite</li>
-          <li>Deeper Connect Mini</li>
-          <li>Deeper Connect Air</li>
-        </ul>
+      <div class="Versatile-Usage-Scenarios-text-content">
+        <h2 class="Versatile-Usage-Scenarios-title">Versatile Usage Scenarios</h2>
+        <p class="Versatile-Usage-Scenarios-text">
+          Ideal for use in offices, cafes, during travel, at airports, or any location with Wi-Fi access！
+        </p>
+        <div class="Versatile-Usage-Scenarios-list">
+          <ul>
+            <li class="active-li">Deeper Connect Pico Lite</li>
+            <li>Deeper Connect Mini</li>
+            <li>Deeper Connect Air</li>
+          </ul>
+        </div>
+      </div>
+      <div class="Versatile-Usage-Scenarios-image">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0686/5754/5273/files/PicoLite-vus.png?v=1727594270"
+          alt="Versatile Usage Scenarios"
+          id="scenarioImage"
+        >
       </div>
     </div>
   </div>
@@ -29,27 +32,41 @@
 
 <style>
   .Versatile-Usage-Scenarios-box {
-    height: 800px;
-    display: flex;
-    position: relative;
     max-width: 1200px;
     margin: 0 auto;
-    position: relative;
+    padding: 80px 20px;
+  }
+  .Versatile-Usage-Scenarios-box-bg {
+    background: #f4f4f4;
   }
 
   .Versatile-Usage-Scenarios-content {
-    width: 385px;
-    max-width: 385px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
+    justify-content: space-between;
+    align-items: center;
   }
+
+  .Versatile-Usage-Scenarios-text-content {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 40px;
+  }
+
+  .Versatile-Usage-Scenarios-image {
+    max-height: 100%;
+    overflow: hidden;
+    height: 390px;
+    width: 690px;
+  }
+
+  .Versatile-Usage-Scenarios-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .Versatile-Usage-Scenarios-title {
-    color: #fff;
+    color: #000;
     font-family: Inter;
     font-size: 36px;
     font-weight: 700;
@@ -57,26 +74,24 @@
     text-transform: uppercase;
     margin-bottom: 20px;
   }
+
   .Versatile-Usage-Scenarios-text {
-    color: #fff;
+    color: #6c6c78;
     font-size: 20px;
     font-weight: 300;
     line-height: 26px;
     margin-bottom: 30px;
     margin-top: 0px;
   }
-  .Versatile-Usage-Scenarios-list {
-    display: flex;
-    width: 100%;
-  }
+
   .Versatile-Usage-Scenarios-list ul {
     display: flex;
     flex-direction: column;
-    width: 100%;
     list-style: none;
     padding: 0;
     margin: 0;
   }
+
   .Versatile-Usage-Scenarios-list ul li {
     color: #c6c6c8;
     font-size: 16px;
@@ -84,51 +99,57 @@
     border-bottom: 4px solid #c6c6c8;
     cursor: pointer;
   }
+
   .Versatile-Usage-Scenarios-list ul li.active-li {
-    color: #fff;
-    border-bottom: 4px solid #fff;
+    color: #000;
+    border-bottom: 4px solid #000;
   }
-  @media screen and (max-width: 1200px) {
+
+  @media screen and (max-width: 768px) {
     .Versatile-Usage-Scenarios-content {
-      left: 50%;
+      flex-direction: column;
+    }
+    .Versatile-Usage-Scenarios-box {
+      padding: 30px 10px;
+    }
+
+    .Versatile-Usage-Scenarios-text-content,
+    .Versatile-Usage-Scenarios-image {
+      max-width: 100%;
+      padding-right: 0;
+    }
+    .Versatile-Usage-Scenarios-title {
+      text-align: center;
+      font-size: 32px;
+    }
+
+    .Versatile-Usage-Scenarios-image {
+      margin-top: 30px;
     }
   }
 </style>
 
 <script>
-  // DOM加载完成
   document.addEventListener('DOMContentLoaded', () => {
     let listLi = document.querySelectorAll('.Versatile-Usage-Scenarios-list ul li');
+    let scenarioImage = document.getElementById('scenarioImage');
 
-    let pcArr = [
-      'https://cdn.shopify.com/s/files/1/0686/5754/5273/files/PicoLite-vus.png?v=1727594270',
-      'https://cdn.shopify.com/s/files/1/0686/5754/5273/files/Mini-vus.png?v=1727594270',
-      'https://cdn.shopify.com/s/files/1/0686/5754/5273/files/Air-vus.png?v=1727594270',
+    let imageArr = [
+      'https://cdn.shopify.com/s/files/1/0686/5754/5273/files/PicoLite-vus.png?v=1727604759',
+      'https://cdn.shopify.com/s/files/1/0686/5754/5273/files/Mini-vus.png?v=1727604758',
+      'https://cdn.shopify.com/s/files/1/0686/5754/5273/files/Air-vus.png?v=1727604752',
     ];
 
-    let mobileArr = [
-      'https://cdn.shopify.com/s/files/1/0686/5754/5273/files/PicoLite-vus.png?v=1727594270',
-      'https://cdn.shopify.com/s/files/1/0686/5754/5273/files/Mini-vus.png?v=1727594270',
-      'https://cdn.shopify.com/s/files/1/0686/5754/5273/files/Air-vus.png?v=1727594270',
-    ];
-
-    // 获取当前设备类型
-    const deviceType = window.innerWidth < 768 ? 'mobile' : 'pc';
-
-    // 切换图片和li样式
     function changeImage(index) {
-      let backgroundImage = deviceType === 'mobile' ? mobileArr[index] : pcArr[index];
+      scenarioImage.src = imageArr[index];
 
-      // 更新背景图
-      document.querySelector('.Versatile-Usage-Scenarios-box-bg').style.backgroundImage = `url(${backgroundImage})`;
-
-      // 更新li样式
       listLi.forEach((li) => li.classList.remove('active-li'));
       listLi[index].classList.add('active-li');
     }
 
     listLi.forEach((item, index) => {
       item.addEventListener('click', () => {
+        console.log(2, index);
         changeImage(index);
       });
     });
