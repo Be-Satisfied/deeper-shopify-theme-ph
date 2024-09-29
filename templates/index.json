@@ -47,40 +47,9 @@
     },
     "section_new_featured_products_rgJF8b": {
       "type": "section-new-featured-products",
-      "blocks": {
-        "product_AcR4ti": {
-          "type": "product",
-          "settings": {
-            "product": "deeper-connect-air",
-            "product_description": "Add a description for this product"
-          }
-        },
-        "product_PAn3B7": {
-          "type": "product",
-          "settings": {
-            "product": "deeper-connect-mini",
-            "product_description": "Add a description for this product"
-          }
-        },
-        "product_H7JrVP": {
-          "type": "product",
-          "settings": {
-            "product": "deeper-connect-pico-lite",
-            "product_description": "Add a description for this product"
-          }
-        }
-      },
-      "block_order": [
-        "product_AcR4ti",
-        "product_PAn3B7",
-        "product_H7JrVP"
-      ],
       "settings": {
         "title": "Featured Products",
-        "description": "<p>Use this area to describe the featured products.</p>",
-        "grid": 4,
-        "enable_slider": true,
-        "color_bg": "palette--light bg--neutral",
+        "description": "",
         "width": "wrapper",
         "padding_top": 36,
         "padding_bottom": 36
