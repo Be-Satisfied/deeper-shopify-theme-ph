@@ -53,7 +53,17 @@
           {% assign product = all_products[block.settings.product] %}
           {% if product != blank %}
             <div class="grid__item {{ grid_strings }}" {{ block.shopify_attributes }}>
-              {% render 'product-grid-item', product: product %}
+              {% if block.settings.custom_image != blank %}
+                <img
+                  src="{{ block.settings.custom_image | img_url: '1000x' }}"
+                  alt="{{ block.settings.custom_title | escape }}"
+                >
+              {% else %}
+                {% render 'product-grid-item', product: product %}
+              {% endif %}
+              {% if block.settings.custom_title != blank %}
+                <h3>{{ block.settings.custom_title }}</h3>
+              {% endif %}
               {% if block.settings.product_description != blank %}
                 <div class="product-description">{{ block.settings.product_description }}</div>
               {% endif %}
@@ -159,6 +169,17 @@
           "type": "product",
           "id": "product",
           "label": "Product"
+        },
+        {
+          "type": "text",
+          "id": "custom_title",
+          "label": "Custom Title",
+          "default": ""
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_image",
+          "label": "Custom Image"
         },
         {
           "type": "textarea",
