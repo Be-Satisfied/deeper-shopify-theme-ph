@@ -13046,6 +13046,7 @@ predictive-search[open] .header__search__results {
 .product-grid-item {
   position: relative;
   display: block;
+  width: 100%;
   margin-bottom: var(--gutter);
 }
 @media only screen and (max-width: 767px) {
@@ -20145,11 +20146,13 @@ body:not(.focus-enabled) .plyr.plyr--full-ui.plyr--video {
 
 .hero__title {
   color: var(--text);
-  margin-bottom: 0.15em;
+  /* margin-bottom: 0.15em; */
+  margin-bottom: 40px;
 }
 
 .hero__description {
-  margin-bottom: 0.8em;
+  /* margin-bottom: 0.8em; */
+  margin-bottom: 40px;
   color: var(--text-light);
 }
 .hero__description p {
@@ -20188,6 +20191,9 @@ body:not(.focus-enabled) .plyr.plyr--full-ui.plyr--video {
   .hero__content {
     max-width: calc(100% - var(--outer));
     padding: 30px;
+  }
+  .hero__description,.hero__title{
+margin-bottom: 20px;
   }
 }
 
