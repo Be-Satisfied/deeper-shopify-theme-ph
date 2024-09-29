@@ -7627,6 +7627,9 @@ html.container-layout .search-popdown.is-visible {
   /* padding-left: var(--outer);
   padding-right: var(--outer); */
 }
+.wrapper > .text__standard{
+  width: 100%;
+}
 .wrapper:after {
   content: "";
   display: table;
@@ -15838,6 +15841,12 @@ html.no-js .quantity__button {
   padding: 18px 24px;
   /* border-top: 1px solid var(--border); */
 }
+.product-accordion .accordion__wrapper {
+  border-bottom: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+  background: none;
+  padding: 0;
+}
 
 .accordion__wrapper + .accordion__wrapper {
   border-top: none;
@@ -15854,6 +15863,7 @@ html.no-js .quantity__button {
   margin: 0;
   cursor: pointer;
   white-space: normal;
+  color: #2F3132;
 }
 .accordion__title:after {
   content: "";
