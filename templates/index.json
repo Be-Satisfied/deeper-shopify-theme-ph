@@ -60,7 +60,7 @@
       "settings": {
         "width": "wrapper",
         "padding_top": 100,
-        "padding_bottom": 36
+        "padding_bottom": 100
       }
     },
     "section_you_might_like_iPpPMU": {
@@ -157,9 +157,9 @@
         "text_color": "text--neutral",
         "bg": "palette--light bg--neutral",
         "height": "use_screen_full",
-        "width": "wrapper",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "width": "wrapper--tiny",
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     }
   },
