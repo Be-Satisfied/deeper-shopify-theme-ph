@@ -1,47 +1,144 @@
 <div
-  class="section-new-featured-products {{ section.settings.color_bg }}"
+  class="section-new-featured-products {{ section.settings.color_bg }} Versatile-Usage-Scenarios-box-bg"
   data-section-id="{{ section.id }}"
   data-section-type="section-new-featured-products"
-  style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;"
+  style="
+    --PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;
+    background-image: url('https://cdn.shopify.com/s/files/1/0686/5754/5273/files/PicoLite-vus.png?v=1727594270');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  "
 >
-  <div class="{{ section.settings.width }} section-padding">
-    <div class="section-new-featured-products__foreground">
-      <div class="section-new-featured-products__inner">
-        <div class="section-new-featured-products__head">
-          {% if section.settings.title != blank %}
-            <h2 class="index__new-featured-products__title h3 text-center new-featured-products__title">
-              {{ section.settings.title | escape }}
-            </h2>
-          {% endif %}
-          {% if section.settings.description != blank %}
-            <div class="index__new-featured-products__subtitle subtitle--decorated">
-              {{ section.settings.description }}
-            </div>
-          {% endif %}
-        </div>
+  <div class="Versatile-Usage-Scenarios-box {{ section.settings.width }}">
+    <div class="Versatile-Usage-Scenarios-content">
+      <h2 class="Versatile-Usage-Scenarios-title">Versatile Usage Scenarios</h2>
+      <p class="Versatile-Usage-Scenarios-text">
+        Ideal for use in offices, cafes, during travel, at airports, or any location with Wi-Fi access！
+      </p>
+      <div class="Versatile-Usage-Scenarios-list">
+        <ul>
+          <li class="active-li">Deeper Connect Pico Lite</li>
+          <li>Deeper Connect Mini</li>
+          <li>Deeper Connect Air</li>
+        </ul>
       </div>
     </div>
   </div>
 </div>
 
-<style></style>
+<style>
+  .Versatile-Usage-Scenarios-box {
+    height: 800px;
+    display: flex;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .Versatile-Usage-Scenarios-content {
+    width: 385px;
+    max-width: 385px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+  .Versatile-Usage-Scenarios-title {
+    color: #fff;
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .Versatile-Usage-Scenarios-text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+  .Versatile-Usage-Scenarios-list {
+    display: flex;
+    width: 100%;
+  }
+  .Versatile-Usage-Scenarios-list ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .Versatile-Usage-Scenarios-list ul li {
+    color: #c6c6c8;
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 4px solid #c6c6c8;
+    cursor: pointer;
+  }
+  .Versatile-Usage-Scenarios-list ul li.active-li {
+    color: #fff;
+    border-bottom: 4px solid #fff;
+  }
+  @media screen and (max-width: 1200px) {
+    .Versatile-Usage-Scenarios-content {
+      left: 50%;
+    }
+  }
+</style>
+
+<script>
+  // DOM加载完成
+  document.addEventListener('DOMContentLoaded', () => {
+    let listLi = document.querySelectorAll('.Versatile-Usage-Scenarios-list ul li');
+
+    let pcArr = [
+      'https://cdn.shopify.com/s/files/1/0686/5754/5273/files/PicoLite-vus.png?v=1727594270',
+      'https://cdn.shopify.com/s/files/1/0686/5754/5273/files/Mini-vus.png?v=1727594270',
+      'https://cdn.shopify.com/s/files/1/0686/5754/5273/files/Air-vus.png?v=1727594270',
+    ];
+
+    let mobileArr = [
+      'https://cdn.shopify.com/s/files/1/0686/5754/5273/files/PicoLite-vus.png?v=1727594270',
+      'https://cdn.shopify.com/s/files/1/0686/5754/5273/files/Mini-vus.png?v=1727594270',
+      'https://cdn.shopify.com/s/files/1/0686/5754/5273/files/Air-vus.png?v=1727594270',
+    ];
+
+    // 获取当前设备类型
+    const deviceType = window.innerWidth < 768 ? 'mobile' : 'pc';
+
+    // 切换图片和li样式
+    function changeImage(index) {
+      let backgroundImage = deviceType === 'mobile' ? mobileArr[index] : pcArr[index];
+
+      // 更新背景图
+      document.querySelector('.Versatile-Usage-Scenarios-box-bg').style.backgroundImage = `url(${backgroundImage})`;
+
+      // 更新li样式
+      listLi.forEach((li) => li.classList.remove('active-li'));
+      listLi[index].classList.add('active-li');
+    }
+
+    listLi.forEach((item, index) => {
+      item.addEventListener('click', () => {
+        changeImage(index);
+      });
+    });
+  });
+</script>
 
 {% schema %}
 {
   "name": "Versatile Usage Scenarios",
   "settings": [
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Heading",
-      "default": "Featured Products"
-    },
-    {
-      "type": "richtext",
-      "id": "description",
-      "label": "Text",
-      "default": "<p>Use this area to describe the featured products.</p>"
-    },
     {
       "type": "select",
       "id": "width",
