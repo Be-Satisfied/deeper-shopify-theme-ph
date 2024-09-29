@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "type": "header",
   "name": "Header",
@@ -8,7 +17,7 @@
         "toolbar": {
           "type": "toolbar",
           "settings": {
-            "announcement_text": "<p>This is announcement <em><strong>richtext<\/strong><\/em> from the header toolbar block<\/p>",
+            "announcement_text": "<p>This is announcement <em><strong>richtext</strong></em> from the header toolbar block</p>",
             "secondary_linklist": "",
             "show_menu_desktop": true,
             "show_menu_mobile": true,
@@ -28,7 +37,7 @@
         "enable_header_sticky": true,
         "header_style": "logo_beside",
         "full_width": false,
-        "logo": "shopify:\/\/shop_images\/Logo.png",
+        "logo": "shopify://shop_images/Logo_380beb50-e669-42c8-9cc8-9430e3e99914.png",
         "logo_max_limit": 120,
         "main_menu_linklist": "main-menu",
         "enable_search": true,
