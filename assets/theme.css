@@ -16266,7 +16266,7 @@ html.no-js .quantity__button {
     padding-bottom: 25px;
   }
   .accordion__heading{
-    font-size: 32px;
+    font-size: 32px !important;
   }
 }
 .section__blog__grid .article__card {
