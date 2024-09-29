@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -50,7 +59,7 @@
             "icon_size": 16,
             "icon_color": "#5d9386",
             "show_icon_bg": true,
-            "text": "<p>Made with recycled fabrics<\/p>",
+            "text": "<p>Made with recycled fabrics</p>",
             "padding_bottom": 20
           }
         },
@@ -62,7 +71,7 @@
             "icon_size": 16,
             "icon_color": "#5d9386",
             "show_icon_bg": true,
-            "text": "<p>Certified fair trade product<\/p>",
+            "text": "<p>Certified fair trade product</p>",
             "padding_bottom": 32
           }
         },
@@ -74,10 +83,10 @@
             "description_icon": "",
             "title_1": "Estimated Delivery",
             "icon_name_1": "",
-            "raw_content_1": "<p>Delivery within 5 working days in the Philippines<\/p>",
+            "raw_content_1": "<p>Delivery within 5 working days in the Philippines</p>",
             "title_2": "Specification",
             "icon_name_2": "",
-            "raw_content_2": "<p>Deeper Connect Air<\/p><p>Weight: <strong>26g<\/strong><\/p><p>Dimensions: <strong>7.5 × 4.6 × 0.8 cm<\/strong><\/p><p>Speed: <strong>300 Mbps<\/strong><\/p><p>Memory:<strong> 1GB<\/strong><\/p><p>Package Weight: <strong>60g<\/strong><\/p>",
+            "raw_content_2": "<p>Deeper Connect Air</p><p>Weight: <strong>26g</strong></p><p>Dimensions: <strong>7.5 × 4.6 × 0.8 cm</strong></p><p>Speed: <strong>300 Mbps</strong></p><p>Memory:<strong> 1GB</strong></p><p>Package Weight: <strong>60g</strong></p>",
             "title_3": "",
             "icon_name_3": "",
             "raw_content_3": "",
@@ -143,7 +152,7 @@
         "heading_A4DyNt": {
           "type": "heading",
           "settings": {
-            "heading": "<p><strong>You may also like<\/strong><\/p>",
+            "heading": "<p><strong>You may also like</strong></p>",
             "text_size": 4
           }
         }
@@ -162,16 +171,16 @@
     "image-left": {
       "type": "section-row",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Mini.jpg",
+        "image": "shopify://shop_images/Mini.jpg",
         "shape": "none",
         "aspect_ratio": 1,
         "layout": "left",
         "title": "Deeper Connect Mini(New)",
         "text_size": 7,
-        "text": "<p>Weight: <strong>172 g<\/strong><\/p><p>Dimensions:<strong> 13 × 6.7 × 2 cm<\/strong><\/p><p>Speed: <strong>1 Gbps<\/strong><\/p><p>Memory: <strong>2GB<\/strong><\/p><p>Package weight: <strong>456 g<\/strong><\/p>",
+        "text": "<p>Weight: <strong>172 g</strong></p><p>Dimensions:<strong> 13 × 6.7 × 2 cm</strong></p><p>Speed: <strong>1 Gbps</strong></p><p>Memory: <strong>2GB</strong></p><p>Package weight: <strong>456 g</strong></p>",
         "color_text_bg": "palette--dark bg--invert",
         "button_label": "Buy Now",
-        "button_link": "shopify:\/\/products\/deeper-connect-mini-new",
+        "button_link": "shopify://products/deeper-connect-mini",
         "button_style": "btn",
         "button_color": "btn--white",
         "color_bg": "palette--light bg--neutral",
@@ -183,16 +192,16 @@
     "image-right": {
       "type": "section-row",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Lite.jpg",
+        "image": "shopify://shop_images/Lite.jpg",
         "shape": "none",
         "aspect_ratio": 1,
         "layout": "right",
         "title": "Deeper Connect Pico Lite",
         "text_size": 7,
-        "text": "<p>Weight: <strong>32 g<\/strong><\/p><p>Dimensions: <strong>8.8 × 3.5 × 1.4 cm<\/strong><\/p><p>Speed: <strong>100 Mbps<\/strong><\/p><p>Memory: <strong>1GB<\/strong><\/p><p>Package Weight: <strong>125 g<\/strong><\/p>",
+        "text": "<p>Weight: <strong>32 g</strong></p><p>Dimensions: <strong>8.8 × 3.5 × 1.4 cm</strong></p><p>Speed: <strong>100 Mbps</strong></p><p>Memory: <strong>1GB</strong></p><p>Package Weight: <strong>125 g</strong></p>",
         "color_text_bg": "palette--light bg--accent",
         "button_label": "Buy Now",
-        "button_link": "shopify:\/\/products\/deeper-connect-pico-lite",
+        "button_link": "shopify://products/deeper-connect-pico-lite",
         "button_style": "btn",
         "button_color": "btn--neutral",
         "color_bg": "palette--light bg--neutral",
