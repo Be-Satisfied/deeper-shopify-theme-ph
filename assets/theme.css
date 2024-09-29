@@ -16069,6 +16069,7 @@ html.no-js .quantity__button {
 .accordion__heading {
   /* margin-bottom: 0.8em; */
   margin-bottom: 60px;
+  text-transform: uppercase;
 }
 
 /* ================ Accordions with images ================ */
