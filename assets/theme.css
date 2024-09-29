@@ -7624,8 +7624,8 @@ html.container-layout .search-popdown.is-visible {
   width: 100%;
   max-width: var(--LAYOUT-WIDTH);
   margin: 0 auto;
-  padding-left: var(--outer);
-  padding-right: var(--outer);
+  /* padding-left: var(--outer);
+  padding-right: var(--outer); */
 }
 .wrapper:after {
   content: "";
@@ -7636,8 +7636,8 @@ html.container-layout .search-popdown.is-visible {
 .wrapper--full {
   max-width: none;
   margin: 0 auto;
-  padding-left: var(--outer);
-  padding-right: var(--outer);
+  /* padding-left: var(--outer);
+  padding-right: var(--outer); */
   width: 100%;
 }
 .wrapper--full:after {
