@@ -117,7 +117,7 @@
       "type": "product-faq",
       "settings": {
         "padding_top": 80,
-        "padding_bottom": 64
+        "padding_bottom": 80
       }
     }
   },
