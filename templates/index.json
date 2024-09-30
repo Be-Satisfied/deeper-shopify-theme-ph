@@ -24,7 +24,7 @@
             "color_bg": "hero__content--transparent",
             "text_align": "align--middle-center",
             "text_color": "text--white",
-            "link_text": "LEARN MOVE",
+            "link_text": "LEARN MORE",
             "link": "shopify://collections",
             "button_size": "btn--large",
             "button_style": "hero__btn btn",
