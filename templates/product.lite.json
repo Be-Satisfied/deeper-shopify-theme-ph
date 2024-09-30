@@ -98,6 +98,13 @@
         "padding_top": 64,
         "padding_bottom": 64
       }
+    },
+    "product_outstanding_features_aTAVnA": {
+      "type": "product-outstanding-features",
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     }
   },
   "order": [
@@ -105,6 +112,7 @@
     "main",
     "related",
     "product_closer_look_EYfHme",
-    "inside_the_box_zhxTM8"
+    "inside_the_box_zhxTM8",
+    "product_outstanding_features_aTAVnA"
   ]
 }

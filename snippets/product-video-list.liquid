@@ -1,5 +1,5 @@
 <div class="product-video-list" onclick="videoPlay()">
-  {% if product.title == 'Deeper Connect Air' or product.title == 'Deeper Connect Air Special Offer' %}
+  {% if product.title == 'Deeper Connect Air' %}
     <div
       class="outstanding-feature__content-item active deeper-air-img"
       style="min-height: 600px;position: relative;inset:0;background-position: center;"
@@ -192,8 +192,8 @@
         top: 50%;
         transform: translateY(-50%);
         background-color: #fff;
-        width: 70px;
-        height: 70px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -209,11 +209,11 @@
       }
 
       .video-container-pico .video-list-btn .video-list-btn-left {
-        left: -60px;
+        left: -15px;
       }
 
       .video-container-pico .video-list-btn .video-list-btn-right {
-        right: -60px;
+        right: -15px;
       }
 
       @media (max-width: 1024px) {
@@ -481,36 +481,29 @@
       const rightBtn = document.querySelector('.video-list-btn-right');
       const videoList = document.querySelector('.video-list');
       const videoItems = document.querySelectorAll('.video-item');
-      const videoListWidth = parseInt((videoItems.length - 4) * 305 + 20 * videoItems.length);
+      const videoListWidth = (videoItems.length - 4) * 305 + 20 * videoItems.length;
+
+      const updateButtonVisibility = () => {
+        leftBtn.style.display = videoList.scrollLeft === 0 ? 'none' : 'block';
+        rightBtn.style.display = Math.ceil(videoList.scrollLeft) >= videoListWidth ? 'none' : 'block';
+      };
 
       leftBtn.addEventListener('click', () => {
-        videoList.scrollLeft -= 305;
-        if (videoList.scrollLeft === 0) {
-          leftBtn.style.display = 'none';
-        }
-        rightBtn.style.display = 'block';
+        videoList.scrollTo({
+          left: videoList.scrollLeft - 305,
+          behavior: 'smooth',
+        });
+        updateButtonVisibility();
       });
-      videoList.addEventListener('scroll', () => {
-        if (videoList.scrollLeft === 0) {
-          leftBtn.style.display = 'none';
-        } else {
-          leftBtn.style.display = 'block';
-        }
-        if (Math.ceil(parseFloat(videoList.scrollLeft)) === videoListWidth) {
-          rightBtn.style.display = 'none';
-        } else {
-          rightBtn.style.display = 'block';
-        }
-      });
+
+      videoList.addEventListener('scroll', updateButtonVisibility);
+
       rightBtn.addEventListener('click', () => {
-        videoList.scrollLeft += 305;
-        if (Math.ceil(parseFloat(videoList.scrollLeft)) >= videoListWidth) {
-          rightBtn.style.display = 'none';
-        }
-        leftBtn.style.display = 'block';
-        if (videoList.scrollLeft === 0) {
-          leftBtn.style.display = 'none';
-        }
+        videoList.scrollTo({
+          left: videoList.scrollLeft + 305,
+          behavior: 'smooth',
+        });
+        updateButtonVisibility();
       });
     </script>
   {% endif %}

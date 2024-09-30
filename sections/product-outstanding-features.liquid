@@ -4,7 +4,7 @@
   data-section-type="tabs"
   style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px; background-color:#ffffff"
 >
-  <div class="wrapper section-padding" style="max-width: 1248px;">
+  <div class="wrapper section-padding" style="max-width: 1200px;">
     <div class="outstanding-feature__title">Outstanding Features</div>
     <div class="outstanding-feature__body">
       {% if product.title != 'Deeper Connect Pico Lite' %}
@@ -465,131 +465,167 @@
 </script>
 {{ 'product-outstanding-features.css' | asset_url | stylesheet_tag }}
 <style>
-  #quick-setup-content {
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    {% if product.title=='Deeper Connect Pico Set (New)' or product.title=="Deeper Connect Pico Lite" or product.title=="DPR Mini SE &  Deeper Connect Pico" or product.title=='Deeper Connect Pico Set × 2' or product.title=='Deeper Connect Pico & Mini Set' or product.title == 'Deeper Connect Pico & Mini Set Special Offer' %}
-      background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/pico_2.jpg?v=1706114683');
-    {% endif %}
-
-      {% if product.title=='Deeper Connect Air' or product.title == 'Deeper Connect Air Special Offer' or product.title=='Deeper Connect Air * 2' or product.title=='Deeper Connect Air & Mini Set' %}
-
-    background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/air_8e21ef04-5451-4508-893c-6ac30bc8954d.png?v=1709191891');
-
-      {% endif %}
-
-      {% if product.title=='DPR Mini SE &  Deeper Connect Air' %}
-
-    background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/air_8e21ef04-5451-4508-893c-6ac30bc8954d.png?v=1709191891');
-
-      {% endif %}
-
-      {% if product.title=='DPR Mini SE' %}
-
-    background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/os-mini-se-cover.jpg?v=1706204152');
-
-      {% endif %}
-
-      {% if product.title=='Deeper Connect Mini Set' or product.title=='Deeper Connect Mini Set * 2' or product.title=='Deeper Connect Mini(New)' %}
-    background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/os-mini-cover.jpg?v=1706204152');
-      {% endif %}
-  }
-
-  .outstanding-feature__content-containter {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-
-
-  .outstanding-feature__content-containter video {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 600px;
-  }
-
-  .deeper-air-img {
-    background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Frame_6358212.png?v=1708600584');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  @media screen and (max-width: 1024px) {
     #quick-setup-content {
-        {% if product.title=='Deeper Connect Pico Set (New)' or product.title=="Deeper Connect Pico Lite" or product.title=="DPR Mini SE &  Deeper Connect Pico" or product.title=='Deeper Connect Pico Set × 2' %}
+      background-repeat: no-repeat;
+      background-size: contain;
 
-      background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Frame_1000004197.jpg?v=1706206160');
+      {% if product.title=='Deeper Connect Pico Set (New)' or product.title=="Deeper Connect Pico Lite" or product.title=="DPR Mini SE &  Deeper Connect Pico" or product.title=='Deeper Connect Pico Set × 2' or product.title=='Deeper Connect Pico & Mini Set' or product.title == 'Deeper Connect Pico & Mini Set Special Offer' %}
+        background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/pico_2.jpg?v=1706114683');
+      {% endif %}
 
-        {% endif %}
+        {% if product.title=='Deeper Connect Air' or product.title == 'Deeper Connect Air Special Offer' or product.title=='Deeper Connect Air * 2' or product.title=='Deeper Connect Air & Mini Set' %}
 
-        {% if product.title=='Deeper Connect Pico & Mini Set' or product.title == 'Deeper Connect Pico & Mini Set Special Offer' or product.title=='Deeper Connect Air & Mini Set' %}
-
-      background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Frame_1000004197_1.jpg?v=1706712489');
-
-        {% endif %}
-
-        {% if product.title=='Deeper Connect Air' or product.title == 'Deeper Connect Air Special Offer' or product.title=='DPR Mini SE &  Deeper Connect Air' or product.title=='Deeper Connect Air * 2' %}
-
-      background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/air-phone.png?v=1709192091');
+      background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/air_8e21ef04-5451-4508-893c-6ac30bc8954d.png?v=1709191891');
 
         {% endif %}
 
+        {% if product.title=='DPR Mini SE &  Deeper Connect Air' %}
+
+      background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/air_8e21ef04-5451-4508-893c-6ac30bc8954d.png?v=1709191891');
+
+        {% endif %}
 
         {% if product.title=='DPR Mini SE' %}
 
-      background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/os-mini-se-phone.png?v=1706204243');
+      background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/os-mini-se-cover.jpg?v=1706204152');
 
         {% endif %}
 
         {% if product.title=='Deeper Connect Mini Set' or product.title=='Deeper Connect Mini Set * 2' or product.title=='Deeper Connect Mini(New)' %}
-
-      background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/os-mini-cover-phone.png?v=1706204242');
-
+      background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/os-mini-cover.jpg?v=1706204152');
         {% endif %}
+    }
 
-      background-size: contain;
-      background-position: center;
-    }
-    .deeper-air-img {
-      background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Frame_6358212_1.png?v=1708599949');
-    }
-    .outstanding-feature__content {
+    .outstanding-feature__content-containter {
+      position: relative;
       width: 100%;
-      height: unset;
-        {% if product.title=='Reseller Trail Package (Pico x 4, Mini x 3, SE x 3)' %}
-      padding-top: 0;
-      overflow: hidden;
-        {% else %}
-      padding-top: 150%;
-        {% endif %}
+      height: 100%;
     }
-    #smart-routing-content {
-        {% if product.title=='Deeper Connect Pico Set (New)' or product.title=='Deeper Connect Pico Set × 2' %}
 
-      background-image: url('/public.deeper.network/Smart-Routing_pico.gif');
 
-        {% endif %}
+    .outstanding-feature__content-containter video {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 600px;
+    }
 
-        {% if product.title=='DPR Mini SE' %}
-
-      background-image: url('//public.deeper.network/Smart-Routing_SE.gif');
-
-        {% endif %}
-
-      {% if product.title=='Deeper Connect Mini Set' or product.title=='Deeper Connect Mini Set * 2' %}
-
-      background-image: url('/public.deeper.network/Smart-Routing_mini.gif');
-
-        {% endif %}
-
-      background-size: contain;
-      background-position: center;
+    .deeper-air-img {
+      background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Frame_6358212.png?v=1708600584');
+      background-size: cover;
       background-repeat: no-repeat;
     }
 
-  }
+    @media screen and (max-width: 1024px) {
+      #quick-setup-content {
+          {% if product.title=='Deeper Connect Pico Set (New)' or product.title=="Deeper Connect Pico Lite" or product.title=="DPR Mini SE &  Deeper Connect Pico" or product.title=='Deeper Connect Pico Set × 2' %}
+
+        background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Frame_1000004197.jpg?v=1706206160');
+
+          {% endif %}
+
+          {% if product.title=='Deeper Connect Pico & Mini Set' or product.title == 'Deeper Connect Pico & Mini Set Special Offer' or product.title=='Deeper Connect Air & Mini Set' %}
+
+        background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Frame_1000004197_1.jpg?v=1706712489');
+
+          {% endif %}
+
+          {% if product.title=='Deeper Connect Air' or product.title == 'Deeper Connect Air Special Offer' or product.title=='DPR Mini SE &  Deeper Connect Air' or product.title=='Deeper Connect Air * 2' %}
+
+        background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/air-phone.png?v=1709192091');
+
+          {% endif %}
+
+
+          {% if product.title=='DPR Mini SE' %}
+
+        background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/os-mini-se-phone.png?v=1706204243');
+
+          {% endif %}
+
+          {% if product.title=='Deeper Connect Mini Set' or product.title=='Deeper Connect Mini Set * 2' or product.title=='Deeper Connect Mini(New)' %}
+
+        background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/os-mini-cover-phone.png?v=1706204242');
+
+          {% endif %}
+
+        background-size: contain;
+        background-position: center;
+      }
+  <<<<<<< HEAD
+      .deeper-air-img {
+        background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Frame_6358212_1.png?v=1708599949');
+      }
+      .outstanding-feature__content {
+        width: 100%;
+        height: unset;
+          {% if product.title=='Reseller Trail Package (Pico x 4, Mini x 3, SE x 3)' %}
+        padding-top: 0;
+        overflow: hidden;
+          {% else %}
+        padding-top: 150%;
+          {% endif %}
+      }
+  =======
+
+      .deeper-air-img {
+        background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Frame_6358212_1.png?v=1708599949');
+      }
+
+      .outstanding-feature__content {
+        width: 100%;
+        height: unset;
+
+          {% if product.title=='Reseller Trail Package (Pico x 4, Mini x 3, SE x 3)' %}
+
+        padding-top: 0;
+        overflow: hidden;
+
+          {% else %}
+
+        padding-top: 150%;
+
+          {% endif %}
+      }
+
+      /* #zero-subscription-fees-content {
+        background-image: url('https://public.deeper.network/Zero-Subscription-Fees_phone.gif');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #000;
+      }
+
+      #ads-blocking-content {
+        background-image: url('https://public.deeper.network/Outstanding Features_Ads Blocking_phone.gif');
+      } */
+
+  >>>>>>> ca3292d41f331e3fe1359cd3c564dafb21fc4bad
+      #smart-routing-content {
+          {% if product.title=='Deeper Connect Pico Set (New)' or product.title=='Deeper Connect Pico Set × 2' %}
+
+        background-image: url('/public.deeper.network/Smart-Routing_pico.gif');
+
+          {% endif %}
+
+          {% if product.title=='DPR Mini SE' %}
+
+        background-image: url('//public.deeper.network/Smart-Routing_SE.gif');
+
+          {% endif %}
+
+        {% if product.title=='Deeper Connect Mini Set' or product.title=='Deeper Connect Mini Set * 2' %}
+
+        background-image: url('/public.deeper.network/Smart-Routing_mini.gif');
+
+          {% endif %}
+
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+    }
 </style>
 {% schema %}
 {
