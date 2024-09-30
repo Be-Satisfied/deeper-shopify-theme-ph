@@ -1,131 +1,17 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
       "type": "product",
-      "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {
-            "navigation": "none",
-            "text_size": 7,
-            "product_show_cutline": true,
-            "show_rating": true,
-            "show_rating_count": false,
-            "padding_bottom": 20
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {
-            "padding_bottom": 20
-          }
-        },
-        "siblings": {
-          "type": "siblings",
-          "disabled": true,
-          "settings": {
-            "siblings_collection": "",
-            "cutline": "",
-            "padding_bottom": 32
-          }
-        },
-        "form": {
-          "type": "form",
-          "settings": {
-            "variant_form": "auto",
-            "show_quantity": true,
-            "show_remaining": true,
-            "enable_payment_button": true,
-            "enable_gift_card_recipient": true,
-            "subscriptions_enable_selectors": true,
-            "info_page": "",
-            "padding_bottom": 20
-          }
-        },
-        "icon-1": {
-          "type": "icon",
-          "disabled": true,
-          "settings": {
-            "icon_name": "icon-recycled",
-            "icon_size": 16,
-            "icon_color": "#5d9386",
-            "show_icon_bg": true,
-            "text": "<p>Made with recycled fabrics<\/p>",
-            "padding_bottom": 20
-          }
-        },
-        "icon-2": {
-          "type": "icon",
-          "disabled": true,
-          "settings": {
-            "icon_name": "icon-sewing-machine",
-            "icon_size": 16,
-            "icon_color": "#5d9386",
-            "show_icon_bg": true,
-            "text": "<p>Certified fair trade product<\/p>",
-            "padding_bottom": 32
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-            "read_more": true,
-            "style": "accordions",
-            "description_icon": "",
-            "title_1": "Estimated Delivery",
-            "icon_name_1": "",
-            "raw_content_1": "<p>Delivery within 5 working days in the Philippines<\/p>",
-            "title_2": "Specification",
-            "icon_name_2": "",
-            "raw_content_2": "<p>Deeper Connect Mini<\/p><p>Weight: <strong>172 g<\/strong><\/p><p>Dimensions: <strong>13 × 6.7 × 2 cm<\/strong><\/p><p>Speed: <strong>1 Gbps<\/strong><\/p><p>CPU: <strong>ARM64 4 cores<\/strong><\/p><p>Memory: <strong>2GB<\/strong><\/p><p>Package weight:<strong> 456 g<\/strong><\/p><p>Deeper Connect Dual Antennas Wi-Fi Adapter<\/p><p>Weight:<strong> 100 g<\/strong><\/p><p>Dimensions: <strong>8.5 × 9 × 20 cm<\/strong><\/p><p>Theoretical speed: <strong>1200 Mbps<\/strong><\/p><p>Coverage spaces: <strong>140 m² and more<\/strong><\/p><p>Interface:<strong> USB Type-C<\/strong><\/p><p>Package weight: <strong>153 g<\/strong><\/p>",
-            "title_3": "",
-            "icon_name_3": "",
-            "raw_content_3": "",
-            "title_4": "",
-            "icon_name_4": "",
-            "raw_content_4": "",
-            "title_5": "",
-            "icon_name_5": "",
-            "raw_content_5": "",
-            "padding_bottom": 32
-          }
-        },
-        "upsell": {
-          "type": "upsell",
-          "disabled": true,
-          "settings": {
-            "product": "",
-            "padding_bottom": 32
-          }
-        },
-        "pickup": {
-          "type": "pickup",
-          "disabled": true,
-          "settings": {
-            "padding_bottom": 32
-          }
-        },
-        "sharing": {
-          "type": "sharing",
-          "disabled": true,
-          "settings": {
-            "share_label": "Share",
-            "padding_bottom": 0
-          }
-        }
-      },
-      "block_order": [
-        "title",
-        "price",
-        "siblings",
-        "form",
-        "icon-1",
-        "icon-2",
-        "description",
-        "upsell",
-        "pickup",
-        "sharing"
-      ],
+      "disabled": true,
       "settings": {
         "bg": "palette--light bg--neutral",
         "product_sticky_enable": true,
@@ -137,83 +23,9 @@
         "padding_bottom": 64
       }
     },
-    "section_text_zBUddP": {
-      "type": "section-text",
-      "blocks": {
-        "heading_A4DyNt": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p><strong>You may also like<\/strong><\/p>",
-            "text_size": 4
-          }
-        }
-      },
-      "block_order": [
-        "heading_A4DyNt"
-      ],
-      "settings": {
-        "align_text": "text-left",
-        "color_bg": "palette--light bg--neutral",
-        "width": "wrapper",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image-left": {
-      "type": "section-row",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Air.jpg",
-        "shape": "none",
-        "aspect_ratio": 1,
-        "layout": "left",
-        "title": "Deeper Connect Air",
-        "text_size": 7,
-        "text": "<p>Weight: <strong>26g<\/strong><\/p><p>Dimensions: <strong>7.5 × 4.6 × 0.8 cm<\/strong><\/p><p>Speed: <strong>300 Mbps<\/strong><\/p><p>Memory: <strong>1GB<\/strong><\/p><p>Package Weight: <strong>60g<\/strong><\/p>",
-        "color_text_bg": "palette--dark bg--invert",
-        "button_label": "Buy Now",
-        "button_link": "shopify:\/\/products\/deeper-connect-air",
-        "button_style": "btn",
-        "button_color": "btn--white",
-        "color_bg": "palette--light bg--neutral",
-        "width": "wrapper",
-        "padding_top": 36,
-        "padding_bottom": 0
-      }
-    },
-    "image-right": {
-      "type": "section-row",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Lite.jpg",
-        "shape": "none",
-        "aspect_ratio": 1,
-        "layout": "right",
-        "title": "Deeper Connect Pico Lite",
-        "text_size": 7,
-        "text": "<p>Weight: <strong>32 g<\/strong><\/p><p>Dimensions: <strong>8.8 × 3.5 × 1.4 cm<\/strong><\/p><p>Speed: <strong>100 Mbps<\/strong><\/p><p>Memory: <strong>1GB<\/strong><\/p><p>Package Weight: <strong>125 g<\/strong><\/p>",
-        "color_text_bg": "palette--light bg--accent",
-        "button_label": "Buy Now",
-        "button_link": "shopify:\/\/products\/deeper-connect-pico-lite",
-        "button_style": "btn",
-        "button_color": "btn--neutral",
-        "color_bg": "palette--light bg--neutral",
-        "width": "wrapper",
-        "padding_top": 24,
-        "padding_bottom": 36
-      }
-    },
-    "recent": {
-      "type": "section-recent-products",
-      "settings": {
-        "product_recently_heading": "Recently viewed",
-        "product_recently_limit": 6,
-        "product_recently_minimum": 4,
-        "width": "wrapper",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "related": {
       "type": "related",
+      "disabled": true,
       "settings": {
         "related_products_enable": true,
         "limit": 3,
@@ -222,14 +34,61 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "2024_product_igK4nC": {
+      "type": "2024-product",
+      "blocks": {
+        "title_n3Fbrj": {
+          "type": "title",
+          "settings": {
+            "product_show_vendor": false,
+            "show_rating": true,
+            "show_rating_count": false
+          }
+        },
+        "liquid_qr94aJ": {
+          "type": "liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"margin:32px 0px;width: 100%; height: 1px; background: #D2D2D7\"></div>"
+          }
+        },
+        "form_3pYgAL": {
+          "type": "form",
+          "settings": {
+            "variant_form": "auto",
+            "show_quantity": true,
+            "show_remaining": true,
+            "enable_payment_button": true,
+            "subscriptions_enable_selectors": true,
+            "info_page": ""
+          }
+        },
+        "upsell_CNVc6k": {
+          "type": "upsell",
+          "settings": {
+            "product": "deeper-connect-air"
+          }
+        }
+      },
+      "block_order": [
+        "title_n3Fbrj",
+        "liquid_qr94aJ",
+        "form_3pYgAL",
+        "upsell_CNVc6k"
+      ],
+      "settings": {
+        "bg": "palette--light bg--neutral",
+        "enable_video_looping": true,
+        "zoom_enable": true,
+        "width": "wrapper",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     }
   },
   "order": [
     "main",
-    "section_text_zBUddP",
-    "image-left",
-    "image-right",
-    "recent",
-    "related"
+    "related",
+    "2024_product_igK4nC"
   ]
 }
