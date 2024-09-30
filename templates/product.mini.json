@@ -1,0 +1,134 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "disabled": true,
+      "settings": {
+        "bg": "palette--light bg--neutral",
+        "product_sticky_enable": true,
+        "image_layout": "thumbnails",
+        "enable_video_looping": true,
+        "zoom_enable": true,
+        "width": "wrapper",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "related": {
+      "type": "related",
+      "disabled": true,
+      "settings": {
+        "related_products_enable": true,
+        "limit": 3,
+        "product_recommendations_heading": "Related products",
+        "width": "wrapper",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "2024_product_igK4nC": {
+      "type": "2024-product",
+      "blocks": {
+        "title_n3Fbrj": {
+          "type": "title",
+          "settings": {
+            "product_show_vendor": false,
+            "show_rating": true,
+            "show_rating_count": false
+          }
+        },
+        "liquid_qr94aJ": {
+          "type": "liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"margin:32px 0px;width: 100%; height: 1px; background: #D2D2D7\"></div>"
+          }
+        },
+        "form_3pYgAL": {
+          "type": "form",
+          "settings": {
+            "variant_form": "auto",
+            "show_quantity": true,
+            "show_remaining": true,
+            "enable_payment_button": true,
+            "subscriptions_enable_selectors": true,
+            "info_page": ""
+          }
+        },
+        "upsell_CNVc6k": {
+          "type": "upsell",
+          "settings": {
+            "product": "deeper-connect-air"
+          }
+        }
+      },
+      "block_order": [
+        "title_n3Fbrj",
+        "liquid_qr94aJ",
+        "form_3pYgAL",
+        "upsell_CNVc6k"
+      ],
+      "settings": {
+        "bg": "palette--light bg--neutral",
+        "enable_video_looping": true,
+        "zoom_enable": true,
+        "width": "wrapper",
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "product_closer_look_rzxFaH": {
+      "type": "product-closer-look",
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "inside_the_box_MJVrb6": {
+      "type": "Inside-the-box",
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "product_outstanding_features_VJcK3E": {
+      "type": "product-outstanding-features",
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "product_compare_bjwmiq": {
+      "type": "Product-compare",
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "product_faq_kENQAV": {
+      "type": "product-faq",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 64
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related",
+    "2024_product_igK4nC",
+    "product_closer_look_rzxFaH",
+    "inside_the_box_MJVrb6",
+    "product_outstanding_features_VJcK3E",
+    "product_compare_bjwmiq",
+    "product_faq_kENQAV"
+  ]
+}
