@@ -95,15 +95,15 @@
     "inside_the_box_zhxTM8": {
       "type": "Inside-the-box",
       "settings": {
-        "padding_top": 64,
-        "padding_bottom": 64
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "product_outstanding_features_aTAVnA": {
       "type": "product-outstanding-features",
       "settings": {
         "padding_top": 80,
-        "padding_bottom": 64
+        "padding_bottom": 80
       }
     },
     "product_compare_DpFKDT": {
