@@ -6,7 +6,7 @@
   Accepts a block, returns the content to render for that block.
 
   Required params:
-  * block: the block that should be rednered.
+  * block: the block that should be rendered.
 
   {% render 'header-block', block: block %}
 {% endcomment %}
@@ -23,7 +23,7 @@
       <div
         class="header__dropdown__item"
         data-stagger-first
-        style="background-color: #f4f4f4; width: 282px; height: 282px; padding: 10px; box-sizing: border-box;"
+        style="background-color: #f4f4f4; width: 282px; height: 282px; padding: 10px; box-sizing: border-box; display: inline-block; margin: 10px;"
       >
         {%- if block.settings.link != blank -%}
           <a
@@ -38,7 +38,7 @@
         <div class="header__dropdown__content" style="text-align: center; margin-top: 10px;">
           {% if block.settings.title != blank %}
             <h2
-              class="header__dropdown__title {{ block.settings.color_text }}"
+              class="header__dropdown__title"
               style="font-size: 16px; margin: 0; line-height: 1.2;"
             >
               {{ block.settings.title | escape }}
@@ -61,23 +61,35 @@
 <style>
   .{{ width_class }} {
     display: inline-block;
-    width: 25%;
-    padding: 10px;
-    box-sizing: border-box;
+    vertical-align: top;
   }
 
-  @media (max-width: 1200px) {
-    .{{ width_class }} {
+  .header__dropdown__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: 1201px) {
+    .header__dropdown__wrapper .{{ width_class }} {
+      width: 25%;
+    }
+  }
+
+  @media (max-width: 1200px) and (min-width: 901px) {
+    .header__dropdown__wrapper .{{ width_class }} {
       width: 33.33%;
     }
   }
-  @media (max-width: 900px) {
-    .{{ width_class }} {
+
+  @media (max-width: 900px) and (min-width: 601px) {
+    .header__dropdown__wrapper .{{ width_class }} {
       width: 50%;
     }
   }
+
   @media (max-width: 600px) {
-    .{{ width_class }} {
+    .header__dropdown__wrapper .{{ width_class }} {
       width: 100%;
     }
   }
