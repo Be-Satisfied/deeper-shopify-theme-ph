@@ -1,0 +1,641 @@
+<section
+  class="section-tabs {{ section.settings.color_bg }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="tabs"
+  style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px; background-color:#ffffff"
+>
+  <div class="wrapper section-padding" style="max-width: 1248px;">
+    <div class="outstanding-feature__title">Outstanding Features</div>
+    <div class="outstanding-feature__body">
+      {% if product.title != 'Deeper Connect Pico Lite' %}
+        <div class="outstanding-feature__content">
+          {% if product.title == 'Reseller Trail Package (Pico x 4, Mini x 3, SE x 3)' %}
+            <div class="slider-wrapper">
+              <div class="slider-wrapper-content">
+                <div class="quick-setup-content-item">
+                  <div class="quick-setup-content-item-img"></div>
+                  <video
+                    controls
+                    poster="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Pico_bb919786-ebb2-4ed9-903f-f8bf6804dbda.png?v=1715138678"
+                  >
+                    <source
+                      src="https://cdn.shopify.com/videos/c/o/v/d58fc2aa10e54b4a99deda13924df8ba.mp4"
+                      type="video/mp4"
+                    >
+                  </video>
+                </div>
+                <div class="quick-setup-content-item">
+                  <div class="quick-setup-content-item-img"></div>
+                  <video
+                    controls
+                    poster="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Mini_8ae2ff0c-40b9-4721-9fb4-b5cfedcde5e3.png?v=1715138677"
+                  >
+                    <source
+                      src="https://cdn.shopify.com/videos/c/o/v/ebc08540503147af9dc8fa3fdb9ddb1a.mp4"
+                      type="video/mp4"
+                    >
+                  </video>
+                </div>
+                <div class="quick-setup-content-item">
+                  <div class="quick-setup-content-item-img"></div>
+                  <video
+                    controls
+                    poster="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/SE_f0b170d7-e682-46d4-a5d7-81d1526c17ee.png?v=1715138677"
+                  >
+                    <source
+                      src="https://cdn.shopify.com/videos/c/o/v/8caabac1686d47c7b562e151c4f7cdde.mp4"
+                      type="video/mp4"
+                    >
+                  </video>
+                </div>
+              </div>
+              <!-- Custom previous and next buttons -->
+              <div class="slider-btns">
+                <button class="slick-prev" aria-label="Previous" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                    <rect width="44" height="44" rx="22" fill="#D2D2D7" fill-opacity="0.64" />
+                    <path
+                      d="M26.2148 31.348C25.8317 31.7311 25.0655 31.7311 24.5547 31.348L16.2538 23.4302C15.3598 22.664 15.3598 21.3869 16.2538 20.6207L24.5547 12.7029C25.0655 12.1921 25.704 12.1921 26.0871 12.7029C26.5979 13.0861 26.5979 13.8523 26.0871 14.2354L17.9139 22.0255L26.0871 29.8155C26.7256 30.1987 26.7257 30.9649 26.2148 31.348Z"
+                      fill="#1D1D1F" />
+                  </svg>
+                </button>
+                <button class="slick-next" aria-label="Next" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                    <rect width="44" height="44" rx="22" fill="#D2D2D7" fill-opacity="0.64" />
+                    <path
+                      d="M17.7852 31.348C18.1683 31.7311 18.9345 31.7311 19.4453 31.348L27.7462 23.4302C28.6402 22.664 28.6402 21.3869 27.7462 20.6207L19.4453 12.7029C18.9345 12.1921 18.296 12.1921 17.9129 12.7029C17.4021 13.0861 17.4021 13.8523 17.9129 14.2354L26.0861 22.0255L17.9129 29.8155C17.2744 30.1987 17.2743 30.9649 17.7852 31.348Z"
+                      fill="#1D1D1F" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          {% else %}
+            <div id="quick-setup-content" class="outstanding-feature__content-item active">
+              <div class="outstanding-feature__content-containter">
+                <div class="mobile--hide">
+                  <div
+                    style="margin-top:202px; margin-left: 160px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex"
+                  >
+                    <div
+                      style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex"
+                    >
+                      <div
+                        style="color: white; font-size: 20px; font-weight: 700; text-transform: capitalize; line-height: 26px; word-wrap: break-word"
+                      >
+                        {{ product.title | replace: ' (New)', '' }}
+                      </div>
+                      <div
+                        style="padding-right: 4.97px; justify-content: flex-start; align-items: flex-start; display: inline-flex"
+                      >
+                        <div
+                          style="color: white; font-size: 43px; font-weight: 700; line-height: 52.01px; word-wrap: break-word"
+                        >
+                          Let’s See How <br>
+                          You Can Use It Too!
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      style="padding-left: 18px; padding-right: 18px; padding-top: 8px; padding-bottom: 8px; background: white; border-radius: 980px; justify-content: flex-start; align-items: flex-start; display: inline-flex"
+                    >
+                      <div
+                        style="cursor:pointer;text-align: center; color: black; font-size: 16px; font-weight: 700; line-height: 20px; word-wrap: break-word"
+                      >
+                        Watch The Video
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <video
+                  id="quick-setup-content__Video"
+                  width="100%"
+                  height="100%"
+                  controls
+                  style="display: none; background-color:#000"
+                >
+                  {% if product.title == 'Deeper Connect Pico Set (New)'
+                    or product.title == 'Deeper Connect Pico Lite'
+                    or product.title == 'Deeper Connect Pico Set × 2'
+                    or product.title == 'Deeper Connect Pico & Mini Set'
+                    or product.title == 'Deeper Connect Pico & Mini Set Special Offer'
+                  %}
+                    <source
+                      src="https://cdn.shopify.com/videos/c/vp/602ec38a0a6541d09e8f4fb1af6f03a2/602ec38a0a6541d09e8f4fb1af6f03a2.HD-1080p-2.5Mbps-23793892.mp4"
+                      type="video/mp4"
+                    >
+                  {% endif %}
+                  {% if product.title == 'Deeper Connect Air'
+                    or product.title == 'Deeper Connect Air Special Offer'
+                    or product.title == 'DPR Mini SE & Deeper Connect Air'
+                    or product.title == 'Deeper Connect Air * 2'
+                    or product.title == 'Deeper Connect Air & Mini Set'
+                  %}
+                    <source
+                      src="https://cdn.shopify.com/videos/c/o/v/00a5240d3a2b429fa54f6d18af44cd3f.mp4"
+                      type="video/mp4"
+                    >
+                  {% endif %}
+                  {% if product.title == 'Deeper Connect Mini(New)'
+                    or product.title == 'Deeper Connect Mini Set * 2'
+                    or product.title == 'DPR Mini SE'
+                  %}
+                    <source
+                      src="https://cdn.shopify.com/videos/c/o/v/851b9fe105dd4c36b6eab6b38131430b.mp4"
+                      type="video/mp4"
+                    >
+                  {% endif %}
+                  {% if product.title == 'DPR Mini SE & Deeper Connect Pico' %}
+                    <source
+                      src="https://cdn.shopify.com/videos/c/vp/602ec38a0a6541d09e8f4fb1af6f03a2/602ec38a0a6541d09e8f4fb1af6f03a2.HD-1080p-2.5Mbps-23793892.mp4"
+                      type="video/mp4"
+                    >
+                  {% endif %}
+                </video>
+              </div>
+            </div>
+          {% endif %}
+
+          {% comment %} <div id="zero-subscription-fees-content" class="outstanding-feature__content-item lazyload"></div> {% endcomment %}
+          <div id="connection-mode-content" class="outstanding-feature__content-item">
+            <div class="connection-mode-content__title mobile--hide">Plug-And-Play. Zero Configuration</div>
+            <div class="connection-mode-content__body">
+              {% if product.title == 'Deeper Connect Pico Set (New)'
+                or product.title == 'Deeper Connect Pico Set × 2'
+              %}
+                <img
+                  loading="lazy"
+                  width="100%"
+                  src="https://cdn.shopifycdn.net/s/files/1/0256/1038/7504/files/1.gif?v=1701062092"
+                  sizes="(min-width: 768px), 90vw, 100vw"
+                  class="lazyload"
+                  alt=""
+                >
+                <img
+                  loading="lazy"
+                  width="100%"
+                  src="https://cdn.shopifycdn.net/s/files/1/0256/1038/7504/files/2.gif?v=1701062092"
+                  sizes="(min-width: 768px), 90vw, 100vw"
+                  class="lazyload"
+                  alt=""
+                >
+                <img
+                  loading="lazy"
+                  width="100%"
+                  src="https://cdn.shopifycdn.net/s/files/1/0256/1038/7504/files/3.gif?v=1701062092"
+                  sizes="(min-width: 768px), 90vw, 100vw"
+                  class="lazyload"
+                  alt=""
+                >
+              {% endif %}
+
+              {% if product.title == 'DPR Mini SE' %}
+                <img
+                  loading="lazy"
+                  width="100%"
+                  src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/setup-mode-01.gif?v=1724718220"
+                  sizes="(min-width: 768px), 90vw, 100vw"
+                  class="lazyload"
+                  alt=""
+                >
+                <img
+                  loading="lazy"
+                  width="100%"
+                  src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/setup-mode-02.gif?v=1724718336"
+                  sizes="(min-width: 768px), 90vw, 100vw"
+                  class="lazyload"
+                  alt=""
+                >
+                <img
+                  loading="lazy"
+                  width="100%"
+                  src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/setup-mode-03.gif?v=1724718358"
+                  sizes="(min-width: 768px), 90vw, 100vw"
+                  class="lazyload"
+                  alt=""
+                >
+              {% endif %}
+
+              {% if product.title == 'Deeper Connect Mini Set'
+                or product.title == 'Deeper Connect Mini Set * 2'
+                or product.title == 'Deeper Connect Mini(New)'
+              %}
+                <img
+                  loading="lazy"
+                  width="100%"
+                  src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/setup-mode-01.gif?v=1724718220"
+                  sizes="(min-width: 768px), 90vw, 100vw"
+                  class="lazyload"
+                  alt=""
+                >
+                <img
+                  loading="lazy"
+                  width="100%"
+                  src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/setup-mode-02.gif?v=1724718336"
+                  sizes="(min-width: 768px), 90vw, 100vw"
+                  class="lazyload"
+                  alt=""
+                >
+                <img
+                  loading="lazy"
+                  width="100%"
+                  src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/setup-mode-03.gif?v=1724718358"
+                  sizes="(min-width: 768px), 90vw, 100vw"
+                  class="lazyload"
+                  alt=""
+                >
+              {% endif %}
+            </div>
+          </div>
+          <div id="smart-routing-content" class="outstanding-feature__content-item">
+            <div class="smart-routing-content__body mobile--hide">
+              {% if product.title == 'Deeper Connect Pico Set (New)'
+                or product.title == 'Deeper Connect Pico Set × 2'
+              %}
+                <img
+                  width="450"
+                  height="442"
+                  src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/smart-routing-pico.png?v=1706536996"
+                  class="lazyload"
+                  loading="lazy"
+                  alt=""
+                >
+              {% endif %}
+
+              {% if product.title == 'DPR Mini SE' %}
+                <img
+                  width="450"
+                  height="442"
+                  src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/smart-routing-mini-se.png?v=1706536996"
+                  class="lazyload"
+                  loading="lazy"
+                  alt=""
+                >
+              {% endif %}
+
+              {% if product.title == 'Deeper Connect Mini Set' or product.title == 'Deeper Connect Mini Set * 2' %}
+                <img
+                  width="450"
+                  height="442"
+                  src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/smart-routing-mini.png?v=1706536996"
+                  class="lazyload"
+                  loading="lazy"
+                  alt=""
+                >
+              {% endif %}
+
+              {% if product.title == 'DPR Mini SE & Deeper Connect Pico' %}
+                <img
+                  width="450"
+                  height="442"
+                  src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/smart-routing-mini-se.png?v=1706536996"
+                  class="lazyload"
+                  loading="lazy"
+                  alt=""
+                >
+              {% endif %}
+
+              <div class="smart-routing-content__body__intro">
+                <div class="smart-routing-content__body__item">
+                  <img
+                    width="160"
+                    height="auto"
+                    src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/feature-smart-routing-icon-01.png?v=1706116119"
+                    class="lazyload"
+                    loading="lazy"
+                    alt=""
+                  >
+                  <div class="smart-routing-content__body__item_content">
+                    <div class="smart-routing-content__body__item_content__title">Decentralization</div>
+                    <div class="smart-routing-content__body__item_content__desc">
+                      DPN uses decentralized technology for a serverless network architecture. Your browsing logs are
+                      fragmented, encrypted, and stored globally, ensuring no one can access your full logs for profit.
+                    </div>
+                  </div>
+                </div>
+                <div class="smart-routing-content__body__item">
+                  <img
+                    width="160"
+                    height="auto"
+                    src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/feature-smart-routing-icon-02.png?v=1706116119"
+                    class="lazyload"
+                    loading="lazy"
+                    alt=""
+                  >
+                  <div class="smart-routing-content__body__item_content">
+                    <div class="smart-routing-content__body__item_content__title">Smart-Routing</div>
+                    <div class="smart-routing-content__body__item_content__desc">
+                      Automatically Configure Network Routing Based on Data Stream Characteristics and Tunnel
+                      Transmission Decision.
+                    </div>
+                  </div>
+                </div>
+                <div class="smart-routing-content__body__item">
+                  <img
+                    width="160"
+                    height="auto"
+                    src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/feature-smart-routing-icon-03.png?v=1706116119"
+                    class="lazyload"
+                    loading="lazy"
+                    alt=""
+                  >
+                  <div class="smart-routing-content__body__item_content">
+                    <div class="smart-routing-content__body__item_content__title">Multi-Routing</div>
+                    <div class="smart-routing-content__body__item_content__desc">
+                      Intelligently switch tunnels according to needs; different routes can be used according to
+                      different servers simultaneously.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="cybersecurity-content" class="outstanding-feature__content-item">
+            <div class="cybersecurity-content__container">
+              <div class="cybersecurity-content__title mobile--hide">Enterprise-grade Cybersecurity</div>
+              <div class="cybersecurity-content__body">
+                <div class="cybersecurity-content__item">
+                  <img
+                    height="auto"
+                    src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/cybersecurity-icon1.png?v=1706117440"
+                    class="lazyload"
+                    loading="lazy"
+                    alt=""
+                  >
+                  <b>Atom OS</b>
+                  <div>The world's first lock-free network operating system built with speed and security in mind.</div>
+                </div>
+                <div class="cybersecurity-content__item">
+                  <img
+                    height="auto"
+                    src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/cybersecurity-icon2.png?v=1706117440"
+                    class="lazyload"
+                    loading="lazy"
+                    alt=""
+                  >
+                  <b>7-layer firewall</b>
+                  <div>
+                    Shield from viruses and Trojans, prevent malicious tracking，detect intrusions and restore safety
+                    online.
+                  </div>
+                </div>
+                <div class="cybersecurity-content__item">
+                  <img
+                    height="auto"
+                    src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/cybersecurity-icon3.png?v=1706117440"
+                    class="lazyload"
+                    loading="lazy"
+                    alt=""
+                  >
+                  <b>Low cost</b>
+                  <div>
+                    Products of similar specifications，such as a Palo Alto Network device may cost more than $10,000
+                    USD.
+                  </div>
+                </div>
+                <div class="cybersecurity-content__item">
+                  <img
+                    height="auto"
+                    src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/cybersecurity-icon4.png?v=1706117440"
+                    class="lazyload"
+                    loading="lazy"
+                    alt=""
+                  >
+                  <b>Visualization </b>
+                  <div>A sleek interface allows visualization of all online ac tivities happening on the network.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% comment %} <div id="ads-blocking-content" class="outstanding-feature__content-item"></div> {% endcomment %}
+        </div>
+      {% endif %}
+
+      {% render 'product-section' %}
+    </div>
+    {% render 'product-video-list' %}
+  </div>
+</section>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var options = document.querySelectorAll('.outstanding-feature__select-item');
+    var contentItems = document.querySelectorAll('.outstanding-feature__content-item');
+    var descItems = document.querySelectorAll('.outstanding-feature__desc-item');
+
+    options.forEach(function (option) {
+      option.addEventListener('click', function () {
+        var id = option.id;
+        var contentId = id + '-content';
+        var descId = id + '-desc';
+
+        contentItems.forEach(function (item) {
+          item.classList.remove('active');
+        });
+        descItems.forEach(function (item) {
+          item.classList.remove('active');
+        });
+        document.getElementById(contentId).classList.add('active');
+        document.getElementById(descId).classList.add('active');
+        options.forEach(function (opt) {
+          opt.classList.remove('selected');
+        });
+        option.classList.add('selected');
+      });
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    let video = document.querySelector('#quick-setup-content__Video');
+    let quick_setup_content = document.querySelector('#quick-setup-content');
+
+    quick_setup_content &&
+      quick_setup_content.addEventListener('click', function () {
+        video.style.display = 'block';
+      });
+  });
+
+  function videoPlay() {
+    let e = document.querySelector('#quick-setup-content-air-video');
+    e.style.display = 'block'; // 显示视频
+    if (video.paused) {
+      video.play(); // 播放视频
+    } else {
+      video.pause(); // 暂停视频
+    }
+  }
+</script>
+{{ 'product-outstanding-features.css' | asset_url | stylesheet_tag }}
+<style>
+  #quick-setup-content {
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    {% if product.title=='Deeper Connect Pico Set (New)' or product.title=="Deeper Connect Pico Lite" or product.title=="DPR Mini SE &  Deeper Connect Pico" or product.title=='Deeper Connect Pico Set × 2' or product.title=='Deeper Connect Pico & Mini Set' or product.title == 'Deeper Connect Pico & Mini Set Special Offer' %}
+      background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/pico_2.jpg?v=1706114683');
+    {% endif %}
+
+      {% if product.title=='Deeper Connect Air' or product.title == 'Deeper Connect Air Special Offer' or product.title=='Deeper Connect Air * 2' or product.title=='Deeper Connect Air & Mini Set' %}
+
+    background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/air_8e21ef04-5451-4508-893c-6ac30bc8954d.png?v=1709191891');
+
+      {% endif %}
+
+      {% if product.title=='DPR Mini SE &  Deeper Connect Air' %}
+
+    background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/air_8e21ef04-5451-4508-893c-6ac30bc8954d.png?v=1709191891');
+
+      {% endif %}
+
+      {% if product.title=='DPR Mini SE' %}
+
+    background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/os-mini-se-cover.jpg?v=1706204152');
+
+      {% endif %}
+
+      {% if product.title=='Deeper Connect Mini Set' or product.title=='Deeper Connect Mini Set * 2' or product.title=='Deeper Connect Mini(New)' %}
+    background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/os-mini-cover.jpg?v=1706204152');
+      {% endif %}
+  }
+
+  .outstanding-feature__content-containter {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .outstanding-feature__content-containter video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 600px;
+  }
+
+  .deeper-air-img {
+    background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Frame_6358212.png?v=1708600584');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: 1024px) {
+    #quick-setup-content {
+        {% if product.title=='Deeper Connect Pico Set (New)' or product.title=="Deeper Connect Pico Lite" or product.title=="DPR Mini SE &  Deeper Connect Pico" or product.title=='Deeper Connect Pico Set × 2' %}
+
+      background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Frame_1000004197.jpg?v=1706206160');
+
+        {% endif %}
+
+        {% if product.title=='Deeper Connect Pico & Mini Set' or product.title == 'Deeper Connect Pico & Mini Set Special Offer' or product.title=='Deeper Connect Air & Mini Set' %}
+
+      background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Frame_1000004197_1.jpg?v=1706712489');
+
+        {% endif %}
+
+        {% if product.title=='Deeper Connect Air' or product.title == 'Deeper Connect Air Special Offer' or product.title=='DPR Mini SE &  Deeper Connect Air' or product.title=='Deeper Connect Air * 2' %}
+
+      background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/air-phone.png?v=1709192091');
+
+        {% endif %}
+
+
+        {% if product.title=='DPR Mini SE' %}
+
+      background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/os-mini-se-phone.png?v=1706204243');
+
+        {% endif %}
+
+        {% if product.title=='Deeper Connect Mini Set' or product.title=='Deeper Connect Mini Set * 2' or product.title=='Deeper Connect Mini(New)' %}
+
+      background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/os-mini-cover-phone.png?v=1706204242');
+
+        {% endif %}
+
+      background-size: contain;
+      background-position: center;
+    }
+
+    .deeper-air-img {
+      background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Frame_6358212_1.png?v=1708599949');
+    }
+
+    .outstanding-feature__content {
+      width: 100%;
+      height: unset;
+
+        {% if product.title=='Reseller Trail Package (Pico x 4, Mini x 3, SE x 3)' %}
+
+      padding-top: 0;
+      overflow: hidden;
+
+        {% else %}
+
+      padding-top: 150%;
+
+        {% endif %}
+    }
+
+    /* #zero-subscription-fees-content {
+      background-image: url('https://public.deeper.network/Zero-Subscription-Fees_phone.gif');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #000;
+    }
+
+    #ads-blocking-content {
+      background-image: url('https://public.deeper.network/Outstanding Features_Ads Blocking_phone.gif');
+    } */
+
+    #smart-routing-content {
+        {% if product.title=='Deeper Connect Pico Set (New)' or product.title=='Deeper Connect Pico Set × 2' %}
+
+      background-image: url('/public.deeper.network/Smart-Routing_pico.gif');
+
+        {% endif %}
+
+        {% if product.title=='DPR Mini SE' %}
+
+      background-image: url('//public.deeper.network/Smart-Routing_SE.gif');
+
+        {% endif %}
+
+      {% if product.title=='Deeper Connect Mini Set' or product.title=='Deeper Connect Mini Set * 2' %}
+
+      background-image: url('/public.deeper.network/Smart-Routing_mini.gif');
+
+        {% endif %}
+
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+  }
+</style>
+{% schema %}
+{
+  "name": "Product Features",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 180,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 64
+    }
+  ],
+  "presets": [{ "name": "Product Features", "category": "Product" }]
+}
+{% endschema %}
