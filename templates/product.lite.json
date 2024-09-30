@@ -170,6 +170,7 @@
         "pickup",
         "sharing"
       ],
+      "disabled": true,
       "settings": {
         "bg": "palette--light bg--neutral",
         "product_sticky_enable": true,
