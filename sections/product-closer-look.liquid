@@ -10,6 +10,9 @@
     {% if product.title == 'Deeper Connect Pico Lite' %}
       {% render 'lite-closer' %}
     {% endif %}
+    {% if product.title == 'Deeper Connect Mini' %}
+      {% render 'mini-closer' %}
+    {% endif %}
   </div>
 </section>
 {{ 'closer-look.css' | asset_url | stylesheet_tag }}
