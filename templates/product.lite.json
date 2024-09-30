@@ -105,6 +105,13 @@
         "padding_top": 64,
         "padding_bottom": 64
       }
+    },
+    "product_compare_DpFKDT": {
+      "type": "Product-compare",
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     }
   },
   "order": [
@@ -113,6 +120,7 @@
     "related",
     "product_closer_look_EYfHme",
     "inside_the_box_zhxTM8",
-    "product_outstanding_features_aTAVnA"
+    "product_outstanding_features_aTAVnA",
+    "product_compare_DpFKDT"
   ]
 }
