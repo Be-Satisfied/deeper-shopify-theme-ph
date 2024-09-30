@@ -10766,10 +10766,14 @@ form .errors ul,
   perspective: 1px;
 }
 .header__dropdown__image .hero__title {
-  font-size: calc(var(--font-5) * var(--FONT-ADJUST-HEADING));
+  /* font-size: calc(var(--font-5) * var(--FONT-ADJUST-HEADING)); */
+  font-size: 16px;
+  margin-bottom: 0px;
+  font-weight: 700;
 }
 .header__dropdown__image .hero__description {
-  font-size: calc(var(--font-4) * var(--FONT-ADJUST-BODY));
+  /* font-size: calc(var(--font-4) * var(--FONT-ADJUST-BODY)); */
+  font-size: 14px;
 }
 .header__dropdown__image .hero__content {
   padding: 30px;
