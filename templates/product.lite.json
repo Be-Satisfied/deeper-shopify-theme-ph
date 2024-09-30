@@ -91,12 +91,20 @@
         "padding_top": 64,
         "padding_bottom": 64
       }
+    },
+    "inside_the_box_zhxTM8": {
+      "type": "Inside-the-box",
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     }
   },
   "order": [
     "2024_product_U9YHLj",
     "main",
     "related",
-    "product_closer_look_EYfHme"
+    "product_closer_look_EYfHme",
+    "inside_the_box_zhxTM8"
   ]
 }
