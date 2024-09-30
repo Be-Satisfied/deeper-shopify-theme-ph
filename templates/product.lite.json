@@ -84,11 +84,19 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "product_closer_look_EYfHme": {
+      "type": "product-closer-look",
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     }
   },
   "order": [
     "2024_product_U9YHLj",
     "main",
-    "related"
+    "related",
+    "product_closer_look_EYfHme"
   ]
 }
