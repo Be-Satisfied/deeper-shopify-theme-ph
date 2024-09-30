@@ -61,18 +61,16 @@
             {% for media in product.media %}
               <span class="product--content__desktop-slider-dot" onclick="currentSlide({{forloop.index0}})"></span> 
             {% endfor %}
-            <!-- 根据图片数量继续添加圆点 -->
           </div>
 
         </div>
-        {% if product.title != 'Deeper Connect Pico Lite' %}
           <div class="product-content-policy__wrapper">
-          {% if product.title == 'Deeper Connect Pico Lite' %}
+          {% comment %} {% if product.title == 'Deeper Connect Pico Lite' %}
             <div class="product-content-policy__flex-item">
               <img loading="lazy" alt="" src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/B2B_Only.png?v=1716431347" />
               <div class="product-content-policy__text">B2B Only</div>
             </div>
-          {% endif %}
+          {% endif %} {% endcomment %}
 
           <div class="product-content-policy__flex-item">
             <img loading="lazy" alt="" src="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/14-day-return_icon_50bb4910-a763-4e5a-adde-79476a286b48.png?v=1706458603" />
@@ -87,7 +85,6 @@
             <div class="product-content-policy__text">Reliable Support</div>
           </div>
         </div> 
-        {% endif %} 
       </div>
 
 
