@@ -14647,7 +14647,9 @@ predictive-search[open] .header__search__results {
 
 .product__form--buybutton .product__submit__buttons {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  gap: 20px;
   justify-content: center;
 }
 .product__form--buybutton .product__submit__buttons .shopify-payment-button,
