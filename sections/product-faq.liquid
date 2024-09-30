@@ -462,9 +462,8 @@
 }
  .product-faq__grid ul li h3 {
   cursor: pointer;
-  padding: 28px 0px;
+  padding: 24px;
   border-bottom: 1px solid #525254;
-  box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.15) inset;
   content: '';
   background-image: url('data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2216%22%20height=%2217%22%20viewBox=%220%200%2016%2017%22%20fill=%22none%22%3E%3Cpath%20d=%22M4.86231%203.35029L5.80511%202.40748L11.462%208.06434L5.80511%2013.7212L4.8623%2012.7784L9.57635%208.06434L4.86231%203.35029Z%22%20fill=%22%23BBBBBB%22/%3E%3C/svg%3E');
   background-size: 16px 16px;
@@ -476,8 +475,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  font-family: 'inter';
-  /* 120% */
 }
 
 .product-faq__grid ul li h3.showed {
@@ -525,6 +522,9 @@
     #product-faq{
       width: 100%;
     }
+    .product-faq__grid ul li h3{
+      padding: 14px 0 !important;
+    }
 
     .product-faq-header-title{
       font-size: 22px;
@@ -539,6 +539,10 @@
     .product-faq__selector ul::-webkit-scrollbar {
       display: none; /* 隐藏Webkit浏览器的滚动条 */ 
       margin-left:100px;
+    }
+    .product-faq__selector ul{
+      justify-content: space-between;
+      width: 100%;
     }
   }
 

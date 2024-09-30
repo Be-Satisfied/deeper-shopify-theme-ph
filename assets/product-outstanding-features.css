@@ -41,6 +41,7 @@
   transition: opacity 1s ease-in-out;
 }
 
+
 .outstanding-feature__body {
   display: flex;
   flex-direction: column;
@@ -336,6 +337,9 @@
     font-size: 24px;
     line-height: 30px;
   }
+.section-padding {
+  padding: 40px 10px;
+}
 
   .outstanding-feature__options {
     width: 100%;
