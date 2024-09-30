@@ -91,12 +91,44 @@
         "padding_top": 64,
         "padding_bottom": 64
       }
+    },
+    "inside_the_box_MJVrb6": {
+      "type": "Inside-the-box",
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "product_outstanding_features_VJcK3E": {
+      "type": "product-outstanding-features",
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "product_compare_bjwmiq": {
+      "type": "Product-compare",
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "product_faq_kENQAV": {
+      "type": "product-faq",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 64
+      }
     }
   },
   "order": [
     "main",
     "related",
     "2024_product_igK4nC",
-    "product_closer_look_rzxFaH"
+    "product_closer_look_rzxFaH",
+    "inside_the_box_MJVrb6",
+    "product_outstanding_features_VJcK3E",
+    "product_compare_bjwmiq",
+    "product_faq_kENQAV"
   ]
 }
