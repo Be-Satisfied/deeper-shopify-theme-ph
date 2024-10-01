@@ -63,12 +63,6 @@
             "product": "deeper-connect-pico-lite"
           }
         },
-        "liquid_zDz67t": {
-          "type": "liquid",
-          "settings": {
-            "custom_liquid": "<div style=\"margin:32px 0px;width: 100%; height: 1px; background: #D2D2D7\"></div>"
-          }
-        },
         "description_kWXkRJ": {
           "type": "description",
           "settings": {
@@ -97,7 +91,6 @@
         "form_8eHG73",
         "title_NwHtpn",
         "upsell_ye39Ew",
-        "liquid_zDz67t",
         "description_kWXkRJ"
       ],
       "settings": {
