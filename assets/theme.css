@@ -10804,6 +10804,7 @@ form .errors ul,
   left: 0;
   max-width: 100vw;
   overflow-y: auto;
+  padding: 60px 0;
   max-height: calc(100vh - var(--menu-height));
 }
 .grandparent .header__dropdown__inner {
@@ -10840,9 +10841,9 @@ form .errors ul,
   padding-right: 5px;
 }
 .grandparent .navlink--child {
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 8px;
+  /* padding-bottom: 8px; */
+  /* border-bottom: 1px solid var(--border); */
+  /* margin-bottom: 8px; */
   width: 100%;
 }
 .meganav--is-transitioning .grandparent.is-visible:before {
@@ -10869,6 +10870,7 @@ form .errors ul,
 
 .dropdown__family .navlink--child {
   font-weight: var(--FONT-WEIGHT-BODY-BOLD);
+  font-size: 16px;
 }
 
 .grandparent.kids-1 .header__grandparent__links {
