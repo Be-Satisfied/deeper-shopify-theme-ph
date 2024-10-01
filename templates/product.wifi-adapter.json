@@ -112,8 +112,29 @@
     "product_closer_look_usb_kUEehQ": {
       "type": "product-closer-look-usb",
       "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "product_inside_the_box_usb_fJYLbG": {
+      "type": "product-inside-the-box-usb",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "you_may_also_like_AP4bTj": {
+      "type": "you-may-also-like",
+      "settings": {
         "padding_top": 64,
         "padding_bottom": 64
+      }
+    },
+    "product_faq_RQQgUH": {
+      "type": "product-faq",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     }
   },
@@ -121,6 +142,9 @@
     "main",
     "related",
     "2024_product_BiPCai",
-    "product_closer_look_usb_kUEehQ"
+    "product_closer_look_usb_kUEehQ",
+    "product_inside_the_box_usb_fJYLbG",
+    "you_may_also_like_AP4bTj",
+    "product_faq_RQQgUH"
   ]
 }
