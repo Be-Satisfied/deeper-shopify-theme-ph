@@ -63,12 +63,6 @@
             "product": "deeper-connect-mini"
           }
         },
-        "liquid_nPi64X": {
-          "type": "liquid",
-          "settings": {
-            "custom_liquid": "<div style=\"margin:32px 0px;width: 100%; height: 1px; background: #D2D2D7\"></div>"
-          }
-        },
         "description_4XGtLB": {
           "type": "description",
           "settings": {
@@ -97,7 +91,6 @@
         "title_rqy3DV",
         "form_BiB9fi",
         "upsell_pY98hD",
-        "liquid_nPi64X",
         "description_4XGtLB"
       ],
       "settings": {
