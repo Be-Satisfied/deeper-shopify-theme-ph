@@ -23,7 +23,6 @@
       <div
         class="header__dropdown__item"
         data-stagger-first
-        style="background-color: #f4f4f4; width: 282px; height: 282px; padding: 10px; box-sizing: border-box; display: inline-block; margin: 10px;"
       >
         {%- if block.settings.link != blank -%}
           <a
@@ -59,6 +58,9 @@
 {% endcase %}
 
 <style>
+  .header__dropdown__item{
+    background-color: #f4f4f4; width: 282px; height: 282px; padding: 10px; box-sizing: border-box; display: inline-block; margin: 10px;
+  }
   .{{ width_class }} {
     display: inline-block;
     vertical-align: top;
@@ -79,6 +81,14 @@
   @media (max-width: 1200px) and (min-width: 901px) {
     .header__dropdown__wrapper .{{ width_class }} {
       width: 33.33%;
+    }
+  }
+
+  /* 媒体查询最大宽度1200 */
+  @media (max-width: 1200px) {
+    .header__dropdown__item{
+      width: 100%;
+      height: auto;
     }
   }
 
