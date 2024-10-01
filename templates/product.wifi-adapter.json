@@ -108,11 +108,19 @@
         "padding_top": 64,
         "padding_bottom": 64
       }
+    },
+    "product_closer_look_usb_kUEehQ": {
+      "type": "product-closer-look-usb",
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
     }
   },
   "order": [
     "main",
     "related",
-    "2024_product_BiPCai"
+    "2024_product_BiPCai",
+    "product_closer_look_usb_kUEehQ"
   ]
 }
