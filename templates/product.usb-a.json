@@ -108,11 +108,43 @@
         "padding_top": 64,
         "padding_bottom": 64
       }
+    },
+    "product_closer_look_usb_TDjw9M": {
+      "type": "product-closer-look-usb",
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "product_inside_the_box_usb_qWz3Rt": {
+      "type": "product-inside-the-box-usb",
+      "settings": {
+        "padding_top": 64,
+        "padding_bottom": 64
+      }
+    },
+    "you_may_also_like_D7FRUb": {
+      "type": "you-may-also-like",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "product_faq_kzVU43": {
+      "type": "product-faq",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 64
+      }
     }
   },
   "order": [
     "main",
     "related",
-    "2024_product_FcCCrr"
+    "2024_product_FcCCrr",
+    "product_closer_look_usb_TDjw9M",
+    "product_inside_the_box_usb_qWz3Rt",
+    "you_may_also_like_D7FRUb",
+    "product_faq_kzVU43"
   ]
 }
