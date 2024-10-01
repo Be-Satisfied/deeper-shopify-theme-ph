@@ -9,132 +9,70 @@
     <div class="outstanding-feature__body">
       {% if product.title != 'Deeper Connect Pico Lite' %}
         <div class="outstanding-feature__content">
-          {% if product.title == 'Reseller Trail Package (Pico x 4, Mini x 3, SE x 3)' %}
-            <div class="slider-wrapper">
-              <div class="slider-wrapper-content">
-                <div class="quick-setup-content-item">
-                  <div class="quick-setup-content-item-img"></div>
-                  <video
-                    controls
-                    poster="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Pico_bb919786-ebb2-4ed9-903f-f8bf6804dbda.png?v=1715138678"
-                  >
-                    <source
-                      src="https://cdn.shopify.com/videos/c/o/v/d58fc2aa10e54b4a99deda13924df8ba.mp4"
-                      type="video/mp4"
-                    >
-                  </video>
-                </div>
-                <div class="quick-setup-content-item">
-                  <div class="quick-setup-content-item-img"></div>
-                  <video
-                    controls
-                    poster="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/Mini_8ae2ff0c-40b9-4721-9fb4-b5cfedcde5e3.png?v=1715138677"
-                  >
-                    <source
-                      src="https://cdn.shopify.com/videos/c/o/v/ebc08540503147af9dc8fa3fdb9ddb1a.mp4"
-                      type="video/mp4"
-                    >
-                  </video>
-                </div>
-                <div class="quick-setup-content-item">
-                  <div class="quick-setup-content-item-img"></div>
-                  <video
-                    controls
-                    poster="https://cdn.shopify.com/s/files/1/0256/1038/7504/files/SE_f0b170d7-e682-46d4-a5d7-81d1526c17ee.png?v=1715138677"
-                  >
-                    <source
-                      src="https://cdn.shopify.com/videos/c/o/v/8caabac1686d47c7b562e151c4f7cdde.mp4"
-                      type="video/mp4"
-                    >
-                  </video>
-                </div>
-              </div>
-              <!-- Custom previous and next buttons -->
-              <div class="slider-btns">
-                <button class="slick-prev" aria-label="Previous" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
-                    <rect width="44" height="44" rx="22" fill="#D2D2D7" fill-opacity="0.64" />
-                    <path
-                      d="M26.2148 31.348C25.8317 31.7311 25.0655 31.7311 24.5547 31.348L16.2538 23.4302C15.3598 22.664 15.3598 21.3869 16.2538 20.6207L24.5547 12.7029C25.0655 12.1921 25.704 12.1921 26.0871 12.7029C26.5979 13.0861 26.5979 13.8523 26.0871 14.2354L17.9139 22.0255L26.0871 29.8155C26.7256 30.1987 26.7257 30.9649 26.2148 31.348Z"
-                      fill="#1D1D1F" />
-                  </svg>
-                </button>
-                <button class="slick-next" aria-label="Next" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
-                    <rect width="44" height="44" rx="22" fill="#D2D2D7" fill-opacity="0.64" />
-                    <path
-                      d="M17.7852 31.348C18.1683 31.7311 18.9345 31.7311 19.4453 31.348L27.7462 23.4302C28.6402 22.664 28.6402 21.3869 27.7462 20.6207L19.4453 12.7029C18.9345 12.1921 18.296 12.1921 17.9129 12.7029C17.4021 13.0861 17.4021 13.8523 17.9129 14.2354L26.0861 22.0255L17.9129 29.8155C17.2744 30.1987 17.2743 30.9649 17.7852 31.348Z"
-                      fill="#1D1D1F" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          {% else %}
-            <div id="quick-setup-content" class="outstanding-feature__content-item active">
-              <div class="outstanding-feature__content-containter">
-                <div class="mobile--hide">
+          <div id="quick-setup-content" class="outstanding-feature__content-item active">
+            <div class="outstanding-feature__content-containter">
+              <div class="mobile--hide">
+                <div
+                  style="margin-top:202px; margin-left: 160px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex"
+                >
                   <div
-                    style="margin-top:202px; margin-left: 160px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 20px; display: inline-flex"
+                    style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex"
                   >
                     <div
-                      style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex"
+                      style="color: white; font-size: 20px; font-weight: 700; text-transform: capitalize; line-height: 26px; word-wrap: break-word"
                     >
-                      <div
-                        style="color: white; font-size: 20px; font-weight: 700; text-transform: capitalize; line-height: 26px; word-wrap: break-word"
-                      >
-                        {{ product.title | replace: ' (New)', '' }}
-                      </div>
-                      <div
-                        style="padding-right: 4.97px; justify-content: flex-start; align-items: flex-start; display: inline-flex"
-                      >
-                        <div
-                          style="color: white; font-size: 43px; font-weight: 700; line-height: 52.01px; word-wrap: break-word"
-                        >
-                          Let’s See How <br>
-                          You Can Use It Too!
-                        </div>
-                      </div>
+                      {{ product.title | replace: ' (New)', '' }}
                     </div>
                     <div
-                      style="padding-left: 18px; padding-right: 18px; padding-top: 8px; padding-bottom: 8px; background: white; border-radius: 980px; justify-content: flex-start; align-items: flex-start; display: inline-flex"
+                      style="padding-right: 4.97px; justify-content: flex-start; align-items: flex-start; display: inline-flex"
                     >
                       <div
-                        style="cursor:pointer;text-align: center; color: black; font-size: 16px; font-weight: 700; line-height: 20px; word-wrap: break-word"
+                        style="color: white; font-size: 43px; font-weight: 700; line-height: 52.01px; word-wrap: break-word"
                       >
-                        Watch The Video
+                        Let’s See How <br>
+                        You Can Use It Too!
                       </div>
                     </div>
                   </div>
+                  <div
+                    style="padding-left: 18px; padding-right: 18px; padding-top: 8px; padding-bottom: 8px; background: white; border-radius: 980px; justify-content: flex-start; align-items: flex-start; display: inline-flex"
+                  >
+                    <div
+                      style="cursor:pointer;text-align: center; color: black; font-size: 16px; font-weight: 700; line-height: 20px; word-wrap: break-word"
+                    >
+                      Watch The Video
+                    </div>
+                  </div>
                 </div>
-                <video
-                  id="quick-setup-content__Video"
-                  width="100%"
-                  height="100%"
-                  controls
-                  style="display: none; background-color:#000"
-                >
-                  {% if product.title == 'Deeper Connect Pico Lite' %}
-                    <source
-                      src="https://cdn.shopify.com/videos/c/vp/602ec38a0a6541d09e8f4fb1af6f03a2/602ec38a0a6541d09e8f4fb1af6f03a2.HD-1080p-2.5Mbps-23793892.mp4"
-                      type="video/mp4"
-                    >
-                  {% endif %}
-                  {% if product.title == 'Deeper Connect Air' %}
-                    <source
-                      src="https://cdn.shopify.com/videos/c/o/v/00a5240d3a2b429fa54f6d18af44cd3f.mp4"
-                      type="video/mp4"
-                    >
-                  {% endif %}
-                  {% if product.title == 'Deeper Connect Mini' %}
-                    <source
-                      src="https://cdn.shopify.com/videos/c/o/v/851b9fe105dd4c36b6eab6b38131430b.mp4"
-                      type="video/mp4"
-                    >
-                  {% endif %}
-                </video>
               </div>
+              <video
+                id="quick-setup-content__Video"
+                width="100%"
+                height="100%"
+                controls
+                style="display: none; background-color:#000"
+              >
+                {% if product.title == 'Deeper Connect Pico Lite' %}
+                  <source
+                    src="https://cdn.shopify.com/videos/c/vp/602ec38a0a6541d09e8f4fb1af6f03a2/602ec38a0a6541d09e8f4fb1af6f03a2.HD-1080p-2.5Mbps-23793892.mp4"
+                    type="video/mp4"
+                  >
+                {% endif %}
+                {% if product.title == 'Deeper Connect Air' or product.title == 'Deeper Connect Air & Mini Set' %}
+                  <source
+                    src="https://cdn.shopify.com/videos/c/o/v/00a5240d3a2b429fa54f6d18af44cd3f.mp4"
+                    type="video/mp4"
+                  >
+                {% endif %}
+                {% if product.title == 'Deeper Connect Mini' %}
+                  <source
+                    src="https://cdn.shopify.com/videos/c/o/v/851b9fe105dd4c36b6eab6b38131430b.mp4"
+                    type="video/mp4"
+                  >
+                {% endif %}
+              </video>
             </div>
-          {% endif %}
+          </div>
 
           {% comment %} <div id="zero-subscription-fees-content" class="outstanding-feature__content-item lazyload"></div> {% endcomment %}
           <div id="connection-mode-content" class="outstanding-feature__content-item">
@@ -371,7 +309,7 @@
       background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/pico_2.jpg?v=1706114683');
     {% endif %}
 
-      {% if product.title=='Deeper Connect Air' %}
+      {% if product.title=='Deeper Connect Air' or product.title=='Deeper Connect Air & Mini Set' %}
 
     background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/air_8e21ef04-5451-4508-893c-6ac30bc8954d.png?v=1709191891');
 
@@ -412,7 +350,7 @@
 
 
 
-        {% if product.title=='Deeper Connect Air'%}
+        {% if product.title=='Deeper Connect Air' or product.title=='Deeper Connect Air & Mini Set' %}
 
       background-image: url('https://cdn.shopify.com/s/files/1/0256/1038/7504/files/air-phone.png?v=1709192091');
 
