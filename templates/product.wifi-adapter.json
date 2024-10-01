@@ -68,13 +68,37 @@
           "settings": {
             "custom_liquid": "<div style=\"margin:32px 0px;width: 100%; height: 1px; background: #D2D2D7\"></div>"
           }
+        },
+        "description_4XGtLB": {
+          "type": "description",
+          "settings": {
+            "read_more": true,
+            "style": "accordions",
+            "description_icon": "",
+            "title_1": "Information",
+            "icon_name_1": "",
+            "raw_content_1": "<p>Weight: 66.3 g<br/>Dimensions: 21.2 × 9.1 × 2.2 cm<br/>Interface: USB Type-C<br/>Package: Weight 151.5 g<br/>Dimensions: 24.6 × 11.8 × 2.9 cm</p>",
+            "title_2": "Warranty & Return Policy",
+            "icon_name_2": "",
+            "raw_content_2": "<p>1-Year limited warranty.14-day return or exchange guarantee.Customs duties are to be paid by the recipient. Duties levied differ across regions.This product is available for shipping to most countries, with the exception of with exception of mainland China, lran and Ukraine.<a href=\"https://deepernetwork.ph/pages/return-cancellation-and-warranty-policy\" target=\"_blank\">Return, Cancellation and Warranty Policy</a>Please keep an accurate personal record of the official order information as our customer service team needs to authenticate the order information in order to provide better after-sales service, including tech support, warranty and/ or replacement.</p>",
+            "title_3": "",
+            "icon_name_3": "",
+            "raw_content_3": "",
+            "title_4": "",
+            "icon_name_4": "",
+            "raw_content_4": "",
+            "title_5": "",
+            "icon_name_5": "",
+            "raw_content_5": ""
+          }
         }
       },
       "block_order": [
         "title_rqy3DV",
         "form_BiB9fi",
         "upsell_pY98hD",
-        "liquid_nPi64X"
+        "liquid_nPi64X",
+        "description_4XGtLB"
       ],
       "settings": {
         "bg": "palette--light bg--neutral",
