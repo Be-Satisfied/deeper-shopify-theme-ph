@@ -38,6 +38,14 @@
     "2024_product_FcCCrr": {
       "type": "2024-product",
       "blocks": {
+        "title_NwHtpn": {
+          "type": "title",
+          "settings": {
+            "product_show_vendor": false,
+            "show_rating": true,
+            "show_rating_count": false
+          }
+        },
         "form_8eHG73": {
           "type": "form",
           "settings": {
@@ -47,14 +55,6 @@
             "enable_payment_button": true,
             "subscriptions_enable_selectors": true,
             "info_page": ""
-          }
-        },
-        "title_NwHtpn": {
-          "type": "title",
-          "settings": {
-            "product_show_vendor": false,
-            "show_rating": true,
-            "show_rating_count": false
           }
         },
         "upsell_ye39Ew": {
@@ -88,8 +88,8 @@
         }
       },
       "block_order": [
-        "form_8eHG73",
         "title_NwHtpn",
+        "form_8eHG73",
         "upsell_ye39Ew",
         "description_kWXkRJ"
       ],
