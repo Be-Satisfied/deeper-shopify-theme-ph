@@ -4,7 +4,7 @@
   data-section-type="tabs"
   style="--PT: {{ section.settings.padding_top }}px; --PB: {{ section.settings.padding_bottom }}px;"
 >
-  <div class="wrapper section-padding inside-the-box">
+  <div class="wrapper inside-the-box">
     <div class="inside-the-box__title">Inside The Box</div>
 
     {% if product.title == 'Deeper Connect Air' %}
@@ -16,6 +16,9 @@
     {% endif %}
     {% if product.title == 'Deeper Connect Pico Lite' %}
       {% render 'lite-inside' %}
+    {% endif %}
+    {% if product.title == 'Deeper Connect Air & Mini Set' %}
+      {% render 'air-mini-inside' %}
     {% endif %}
   </div>
 </section>

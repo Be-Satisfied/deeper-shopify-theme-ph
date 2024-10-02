@@ -16,6 +16,9 @@
     {% if product.title == 'Deeper Connect Air' %}
       {% render 'air-closer' %}
     {% endif %}
+    {% if product.title == 'Deeper Connect Air & Mini Set' %}
+      {% render 'air-mini-closer' %}
+    {% endif %}
   </div>
 </section>
 {{ 'closer-look.css' | asset_url | stylesheet_tag }}
