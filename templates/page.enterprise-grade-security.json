@@ -29,8 +29,8 @@
         "image_Bk9kUa": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/pc-banner-1.png",
-            "mobile_image": "shopify://shop_images/phone-banner-1.png",
+            "image": "shopify://shop_images/pc-banner-4.png",
+            "mobile_image": "shopify://shop_images/phone-banner-4.png",
             "bg_position": "center-center",
             "overlay_opacity": 0,
             "overlay_color": "#000000",
