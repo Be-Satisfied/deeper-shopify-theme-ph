@@ -43,7 +43,7 @@
             "link_text": "Buy Now",
             "link": "https://deepernetwork.ph/",
             "button_size": "btn--large",
-            "button_style": "text-link",
+            "button_style": "hero__btn btn",
             "button_color": "btn--secondary"
           }
         }
