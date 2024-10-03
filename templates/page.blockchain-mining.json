@@ -11,7 +11,6 @@
   "sections": {
     "main": {
       "type": "page-default",
-      "disabled": true,
       "settings": {
         "show_title": true,
         "show_content": true,
@@ -19,8 +18,8 @@
         "page_nav": "",
         "bg": "palette--light bg--neutral",
         "width": "wrapper",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 32,
+        "padding_bottom": 32
       }
     },
     "section_feature_slideshow_jgpcbH": {
