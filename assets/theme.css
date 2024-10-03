@@ -21399,6 +21399,11 @@ margin-bottom: 20px;
 }
 
 .text__standard{
+  /* width: 794px; */
+  width:100%;
+  margin: 0 auto;
+}
+.accordion__container--grid .text__standard{
   width: 794px;
   margin: 0 auto;
 }
