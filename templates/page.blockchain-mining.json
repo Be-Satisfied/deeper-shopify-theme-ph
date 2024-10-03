@@ -185,31 +185,11 @@
             "title": "How to mine without staking",
             "text": "<p><a href=\"https://www.youtube.com/watch?v=AbG6stgUOT8\" target=\"_blank\" title=\"How to mine without staking - Deeper Network\">https://www.youtube.com/watch?v=AbG6stgUOT8</a></p>"
           }
-        },
-        "icon_block_eUpBr4": {
-          "type": "icon_block",
-          "settings": {
-            "icon_name": "icon-lock-shield",
-            "icon_color": "#ffc896",
-            "title": "Secure Checkout",
-            "text": ""
-          }
-        },
-        "icon_block_e8eRfN": {
-          "type": "icon_block",
-          "settings": {
-            "icon_name": "icon-phone",
-            "icon_color": "#ff8484",
-            "title": "Dedicated support",
-            "text": ""
-          }
         }
       },
       "block_order": [
         "icon_block_JhPbDx",
-        "icon_block_R3UpJH",
-        "icon_block_eUpBr4",
-        "icon_block_e8eRfN"
+        "icon_block_R3UpJH"
       ],
       "settings": {
         "bg": "palette--light bg--neutral",
@@ -244,31 +224,11 @@
             "title": "Basic mining update",
             "text": "<p><a href=\"https://deepernetwork.ph/blogs/news/deeper-network-basic-mining-2-0-mining-updates-for-genesis-and-basic-mining\" target=\"_blank\" title=\"https://deepernetwork.ph/blogs/news/deeper-network-basic-mining-2-0-mining-updates-for-genesis-and-basic-mining\">https://deepernetwork.ph/blogs/news/deeper-network-basic-mining-2-0-mining-updates-for-genesis-and-basic-mining</a></p>"
           }
-        },
-        "icon_block_GeaFdw": {
-          "type": "icon_block",
-          "settings": {
-            "icon_name": "icon-lock-shield",
-            "icon_color": "#ffc896",
-            "title": "Secure Checkout",
-            "text": ""
-          }
-        },
-        "icon_block_VhkA6e": {
-          "type": "icon_block",
-          "settings": {
-            "icon_name": "icon-phone",
-            "icon_color": "#ff8484",
-            "title": "Dedicated support",
-            "text": ""
-          }
         }
       },
       "block_order": [
         "icon_block_KwfzmU",
-        "icon_block_bgeJFj",
-        "icon_block_GeaFdw",
-        "icon_block_VhkA6e"
+        "icon_block_bgeJFj"
       ],
       "settings": {
         "bg": "palette--light bg--neutral",
@@ -303,31 +263,11 @@
             "title": "Tutorials and updates",
             "text": "<p><a href=\"/blogs/news\" target=\"_blank\" title=\"News\">https://deepernetwork.ph/pages/blog</a></p>"
           }
-        },
-        "icon_block_mRMRaA": {
-          "type": "icon_block",
-          "settings": {
-            "icon_name": "icon-lock-shield",
-            "icon_color": "#ffc896",
-            "title": "Secure Checkout",
-            "text": ""
-          }
-        },
-        "icon_block_FxeNbb": {
-          "type": "icon_block",
-          "settings": {
-            "icon_name": "icon-phone",
-            "icon_color": "#ff8484",
-            "title": "Dedicated support",
-            "text": ""
-          }
         }
       },
       "block_order": [
         "icon_block_9h3mp3",
-        "icon_block_imj7hy",
-        "icon_block_mRMRaA",
-        "icon_block_FxeNbb"
+        "icon_block_imj7hy"
       ],
       "settings": {
         "bg": "palette--light bg--neutral",
