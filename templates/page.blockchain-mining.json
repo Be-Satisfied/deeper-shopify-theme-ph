@@ -233,7 +233,7 @@
             "icon_alt": "shopify://shop_images/Frame_1087429.png",
             "icon_color": "#4f8bf2",
             "title": "Basic mining",
-            "text": "<p>https://deepernetwork.ph/blogs/news/deeper-network-basic-mining-rules-and-rewards</p>"
+            "text": "<p><a href=\"https://deepernetwork.ph/blogs/news/deeper-network-basic-mining-rules-and-rewards\" target=\"_blank\" title=\"https://deepernetwork.ph/blogs/news/deeper-network-basic-mining-rules-and-rewards\">https://deepernetwork.ph/blogs/news/deeper-network-basic-mining-rules-and-rewards</a></p>"
           }
         },
         "icon_block_bgeJFj": {
@@ -243,7 +243,7 @@
             "icon_alt": "shopify://shop_images/Frame_1087428.png",
             "icon_color": "#51c88e",
             "title": "Basic mining update",
-            "text": "<p>https://deepernetwork.ph/blogs/news/deeper-network-basic-mining-2-0-mining-updates-for-genesis-and-basic-mining</p>"
+            "text": "<p><a href=\"https://deepernetwork.ph/blogs/news/deeper-network-basic-mining-2-0-mining-updates-for-genesis-and-basic-mining\" target=\"_blank\" title=\"https://deepernetwork.ph/blogs/news/deeper-network-basic-mining-2-0-mining-updates-for-genesis-and-basic-mining\">https://deepernetwork.ph/blogs/news/deeper-network-basic-mining-2-0-mining-updates-for-genesis-and-basic-mining</a></p>"
           }
         },
         "icon_block_GeaFdw": {
@@ -302,7 +302,7 @@
             "icon_alt": "shopify://shop_images/icon-tutorials.png",
             "icon_color": "#51c88e",
             "title": "Tutorials and updates",
-            "text": "<p>https://deepernetwork.ph<a href=\"/pages/blog\" target=\"_blank\" title=\"Blog\">/pages/blog</a></p>"
+            "text": "<p><a href=\"/blogs/news\" target=\"_blank\" title=\"News\">https://deepernetwork.ph/pages/blog</a></p>"
           }
         },
         "icon_block_mRMRaA": {
