@@ -220,7 +220,7 @@
         "grid": 2,
         "width": "wrapper",
         "padding_top": 0,
-        "padding_bottom": 36
+        "padding_bottom": 0
       }
     },
     "section_icons_VKyeWf": {
@@ -233,16 +233,17 @@
             "icon_alt": "shopify://shop_images/Frame_1087429.png",
             "icon_color": "#4f8bf2",
             "title": "Basic mining",
-            "text": ""
+            "text": "<p>https://deepernetwork.ph/blogs/news/deeper-network-basic-mining-rules-and-rewards</p>"
           }
         },
         "icon_block_bgeJFj": {
           "type": "icon_block",
           "settings": {
             "icon_name": "icon-basket-return",
+            "icon_alt": "shopify://shop_images/Frame_1087428.png",
             "icon_color": "#51c88e",
-            "title": "Flexible Returns",
-            "text": ""
+            "title": "Basic mining update",
+            "text": "<p>https://deepernetwork.ph/blogs/news/deeper-network-basic-mining-2-0-mining-updates-for-genesis-and-basic-mining</p>"
           }
         },
         "icon_block_GeaFdw": {
@@ -277,8 +278,8 @@
         "alignment": "text-left",
         "grid": 2,
         "width": "wrapper",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "section_icons_ceD8hR": {
@@ -288,18 +289,20 @@
           "type": "icon_block",
           "settings": {
             "icon_name": "icon-earth",
+            "icon_alt": "shopify://shop_images/Frame_1087430.png",
             "icon_color": "#4f8bf2",
-            "title": "Global Shipping",
-            "text": ""
+            "title": "How to stake",
+            "text": "<p><a href=\"https://deepernetwork.ph/blogs/tutorials/deeper-network-staking-tutorial-for-binance-smart-chain-bsc-pc-version\" target=\"_blank\" title=\"https://deepernetwork.ph/blogs/tutorials/deeper-network-staking-tutorial-for-binance-smart-chain-bsc-pc-version\">https://deepernetwork.ph/blogs/tutorials/deeper-network-staking-tutorial-for-binance-smart-chain-bsc-pc-version</a></p>"
           }
         },
         "icon_block_imj7hy": {
           "type": "icon_block",
           "settings": {
             "icon_name": "icon-basket-return",
+            "icon_alt": "shopify://shop_images/icon-tutorials.png",
             "icon_color": "#51c88e",
-            "title": "Flexible Returns",
-            "text": ""
+            "title": "Tutorials and updates",
+            "text": "<p>https://deepernetwork.ph<a href=\"/pages/blog\" target=\"_blank\" title=\"Blog\">/pages/blog</a></p>"
           }
         },
         "icon_block_mRMRaA": {
@@ -329,13 +332,13 @@
       ],
       "settings": {
         "bg": "palette--light bg--neutral",
-        "icon_size": "icon--medium",
+        "icon_size": "icon--small",
         "show_icon_bg": true,
-        "alignment": "text-center",
-        "grid": 4,
+        "alignment": "text-left",
+        "grid": 2,
         "width": "wrapper",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 46
       }
     }
   },
