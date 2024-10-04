@@ -3262,6 +3262,7 @@ body.focus-enabled *:focus .product__media {
 
 .grid--inner-offsets .grid__item {
   margin-bottom: 0;
+  /* height:100%; */
 }
 @media only screen and (max-width: 767px) {
   .grid--inner-offsets .grid__item {
@@ -13334,6 +13335,7 @@ predictive-search[open] .header__search__results {
   padding: calc(var(--inner) * 2) var(--inner);
   border-radius: var(--RADIUS);
   background-color: var(--bg-accent);
+  height:100%;
 }
 
 .icon__column.text-center {
