@@ -15980,7 +15980,8 @@ html.no-js .quantity__button {
 }
 
 .accordion__body.font--3 p {
-  font-size: calc(var(--font-5) * var(--FONT-ADJUST-BODY));
+  /* font-size: calc(var(--font-5) * var(--FONT-ADJUST-BODY)); */
+  font-size: 14px;
 }
 
 .accordion__body.font--4 p {
