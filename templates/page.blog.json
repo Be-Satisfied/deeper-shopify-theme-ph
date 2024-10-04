@@ -64,12 +64,12 @@
         "image": "shopify://shop_images/Frame.png",
         "height": "use_image",
         "overlay_opacity": 0,
-        "overlay_color": "#000",
+        "overlay_color": "#000000",
         "flex_align": "align--middle-left",
         "align_text": "text-left",
         "color": "text--white",
         "color_bg": "hero__content--transparent",
-        "width": "wrapper--none",
+        "width": "wrapper",
         "padding_top": 0,
         "padding_bottom": 0
       }
