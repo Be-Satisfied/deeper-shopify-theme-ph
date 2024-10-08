@@ -21417,7 +21417,7 @@ margin-bottom: 20px;
     padding: 0 10px;
   }
   .text__standard{
-    width: 100%;
+    width: 100% !important;
   }
 }
 
