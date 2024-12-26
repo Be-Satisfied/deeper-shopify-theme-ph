@@ -61,8 +61,8 @@
     "tag_new_limit": 14,
     "content_for_index": [],
     "blocks": {
-      "5368581398600051233": {
-        "type": "shopify://apps/bloy-loyalty-rewards/blocks/bloy-popup/97e8894d-00f0-41a9-b986-49828146257c",
+      "11068332061543699368": {
+        "type": "shopify://apps/booster-page-speed-optimizer/blocks/app-embed/d920faf3-7c60-423a-9636-22618b5561b5",
         "disabled": false,
         "settings": {}
       }
